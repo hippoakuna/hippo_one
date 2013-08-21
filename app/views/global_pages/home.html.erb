@@ -1,0 +1,94 @@
+<% provide(:title, 'Artists - Coming Soon') %>
+<%= stylesheet_link_tag 'pages/welcome' %>
+<%= stylesheet_link_tag 'js/lightview/lightview' %>
+<%= stylesheet_link_tag 'js/lightview/demo_inline' %>
+<%= stylesheet_link_tag 'js/fwslider/component' %>
+<%= javascript_include_tag "fwslider/modernizr.custom" %>
+<%= javascript_include_tag "fwslider/jquery.cbpFWSlider.min" %>
+<%= javascript_include_tag "slidesjs/jquery.slides.min" %>
+
+<!-- FWSlider -->
+<script>
+  $( function() {
+    $( '#cbp-fwslider' ).cbpFWSlider();
+  } );
+</script>
+
+<!-- 
+.....................................................................
+-->
+
+<h2 id="artist-title"><%= image_tag "main/main/top-line.png", class: "headshad" %></h2>
+
+<!-- Main Features
+.....................................................................
+-->
+
+<section id="feature">
+  <div class="clearfix">
+      <div id="cbp-fwslider" class="cbp-fwslider">
+        <ul>  
+          <li><%= link_to image_tag("main/banners/aabnrblk.png"), users_path %>
+            <p>
+              <strong>Akuna</strong>
+              <br><span><i class="icon-certificate"></i> musician</span><span style="margin-left: 10px;"><i class="icon-certificate"></i> designer</span>
+            </p>
+          </li>
+          <li><%= link_to image_tag("main/banners/mlb.jpg"), "#" %>
+            <p>
+              <strong>Me Like Bees</strong>
+              <br><span><i class="icon-certificate"></i> musician</span>                       
+            </p>
+          </li>                            
+        </ul>
+      </div>   
+  </div>
+</section><div class='clear'>&nbsp;</div>
+
+
+<!-- Sub Features
+.....................................................................
+-->
+
+
+
+<section id="content">
+  <section id="box3" class="grid_7">
+    
+    <div class="form-5" style="margin-top:65px;">    
+      <%= form_for(:session, url: sessions_path) do |f| %>
+        <p>
+        <%= f.text_field :name, placeholder: "name", name: "top" %>
+        <%= f.text_field :email, placeholder: "email address", name: "up" %>  
+        </p>
+        <%= f.submit "Get Updates", class: "welc-in" %>
+      <% end %>
+    </div>
+
+  </section>
+  <section id="box2" class="grid_7">
+    <%= image_tag "http://lh5.ggpht.com/-13qpvw5uBa0/T28hrIHxy7I/AAAAAAAAHcM/4I8vwSx73xM/image_thumb5.png?imgmax=800", class: "videoplace" %>
+    
+    <a href="#"><img src="/assets/main/etc/play2.png" onmouseover="this.src='/assets/main/etc/play3.png'" onmouseout="this.src='/assets/main/etc/play2.png'" class="playbutton" style="width:70px;height:70px;"/></a>    
+  </section>
+</section>
+
+
+<footer>
+  &copy; 2013 Hippo, LLC. All rights reserved. 
+  <a href="#">Legal</a> | 
+  <a href="#">About</a> | 
+  <a href="#">Contact</a> 
+</footer>
+
+
+<!-- SlidesJS  -->
+<script>
+  $(function() {
+    $('#slides').slidesjs({
+      width: 960,
+      height: 310,        
+      navigation: false
+    });
+  });
+</script>  

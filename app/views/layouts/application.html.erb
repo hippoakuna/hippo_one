@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+
+Author: Kalani Akuna
+Icons original + iconmonstr.com + font-awesome
+hippoartists.com © Hippo, LLC. 
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          © 2013 Hippo, LLC.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````````````````````````````````````````````````
+
+-->
+
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", 
+  "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", 
+  "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" %>
+  <%= favicon_link_tag 'icons/main/hicon-2.png' %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %> 
+</head>
+
+<body>
+  <div class="container_12">
+    <%= render 'layouts/header' %>
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+    <% end %>
+    <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
+  </div>
+</body>
+
+</html>
+
+
