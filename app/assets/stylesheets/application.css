@@ -11,31 +11,40 @@
 /* Basic
 -------------------------------------------------------------------------------------*/
 
-/*html { height: 100%; }*/
 body { 
-  margin:0; padding:0; /*height: 100%;*/ 
+  margin:0; padding:0; 
   font: normal 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;  
   background: url(main/main/background-texture.jpg) top repeat;
 }
 #header {
+  /*background: rgb(255,255,255);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  */
   background: rgb(247,247,247);
-  background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(246,246,246,1) 47%, rgba(242,242,242,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(242,242,242,1)));
-  background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-  background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-  background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f2f2f2',GradientType=0 );
-  border-bottom: 1px solid rgba(150,150,150,.2);
+  background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(255,255,255,1) 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(98%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
+  background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
+  background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
+  background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 );
+  border-bottom: 1px solid rgba(150,150,150,.1);
+  
   position:fixed;
   top: 0; left: 0;
-  z-index: 2;
+  z-index: 3;
   width:100%;
   height: 3em;
 } 
 a:link {color: #0084b4; text-decoration: none;}  
 a:visited {color: #0084b4; text-decoration: none;} 
-a:hover {color: #1794B3; text-decoration: underline;}     
+a:hover {color: #1794B3; text-decoration: none;}     
 a:active {color: rgba(1,1,1,1); text-decoration: none;} 
 
 /* Screen Fix
@@ -95,7 +104,7 @@ img.headshad {
 }
 img.topfloat {
   width: 899px; 
-  position: absolute; top: 71px; left: 70px; /* top 71 */
+  position: absolute; top: 70px; left: 70px; /* top 71 */
 }
 
 /* #Header #Right
@@ -106,41 +115,6 @@ img.topfloat {
 #right li {
   float: right;
   margin: -33px -5px 0;
-}
-
-button.linkaway {
-  height: 32px; width: 33px; color: #555; font-size: 10px;
-  -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  border: 1px solid rgba(220,220,220,.7);
-  background: none;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px; 
-}
-button.linkaway:hover {
-  border: 1px solid rgba(220,220,220,.7);
-  cursor: pointer;
-  background: -moz-linear-gradient(
-    top,
-    #ffffff 0%,
-    #dedede);
-  background: -webkit-gradient(
-    linear, left top, left bottom, 
-    from(#ffffff),
-    to(#dedede));
-  -moz-box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  -webkit-box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  text-shadow:
-    0px 0px 0px rgba(000,000,000,0),
-    0px 2px 0px rgba(255,255,255,1); 
 }
 
 /* #Header #Right Search
@@ -179,6 +153,97 @@ button.linkaway:hover {
 .search :-ms-input-placeholder { color: #666; font-family: 'lato'; }
 
 
+/* #Header #Right Buttons
+-------------------------------------------------------------------------------------*/
+
+
+button.signup {
+  height: 32px; min-width: 53px; color: #555; font-size: 10px;
+  -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
+  text-shadow:1px 1px 1px rgba(255,255,255, 1);
+  border: 1px solid rgba(200,200,200,.3); 
+
+  /*background: rgb(247,247,247);
+  background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(242,242,242,1) 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(98%,rgba(242,242,242,1)));
+  background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
+  background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
+  background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
+  background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f2f2f2',GradientType=0 );*/
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;    
+}
+button.signup:hover {
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #dedede);
+  background: -webkit-gradient(
+    linear, left top, left bottom, 
+    from(#ffffff),
+    to(#dedede));
+  -moz-box-shadow:
+    0px 1px 1px rgba(143,143,143,0.5),
+    inset 0px 0px 14px rgba(227,227,227,1);
+  -webkit-box-shadow:
+    0px 1px 1px rgba(143,143,143,0.5),
+    inset 0px 0px 14px rgba(227,227,227,1);
+  box-shadow:
+    0px 1px 1px rgba(143,143,143,0.5),
+    inset 0px 0px 14px rgba(227,227,227,1);
+  text-shadow:
+    0px 0px 0px rgba(000,000,000,0),
+    0px 2px 0px rgba(255,255,255,1);
+}
+
+button.linkaway {
+  height: 32px; width: 33px; color: #555; font-size: 10px;
+  -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
+  text-shadow:1px 1px 1px rgba(255,255,255, 1);
+  border: 1px solid rgba(220,220,220,.7);
+  background: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; 
+}
+button.linkaway:hover {
+  border: 1px solid rgba(220,220,220,.7);
+  cursor: pointer;
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #dedede);
+  background: -webkit-gradient(
+    linear, left top, left bottom, 
+    from(#ffffff),
+    to(#dedede));
+  -moz-box-shadow:
+    0px 1px 1px rgba(143,143,143,0.5),
+    inset 0px 0px 14px rgba(227,227,227,1);
+  -webkit-box-shadow:
+    0px 1px 1px rgba(143,143,143,0.5),
+    inset 0px 0px 14px rgba(227,227,227,1);
+  box-shadow:
+    0px 1px 1px rgba(143,143,143,0.5),
+    inset 0px 0px 14px rgba(227,227,227,1);
+  text-shadow:
+    0px 0px 0px rgba(000,000,000,0),
+    0px 2px 0px rgba(255,255,255,1); 
+}
+
 button a:link, button a:visited, button a:hover, button a:active {
   color: rgba(1,1,1,.8); text-decoration: none;
 }  
@@ -191,9 +256,9 @@ button a:link, button a:visited, button a:hover, button a:active {
 #left-sidebar {
   background: url(main/main/Linen-iPhone-2.png) top repeat;
   margin: 0; padding: 0; margin-top: 0em;
-  position: fixed;
+  position: fixed; 
   width: 4.4em;
-  height:100%;
+  height:100%; 
   -webkit-border-top-left-radius: 5px;
   -moz-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -248,8 +313,11 @@ div.clear {
 /* Artist Pages
 -------------------------------------------------------------------------------------*/
 
+h1#artist-title i {
+  position: relative; left: -5px; bottom: 1px; font-size: 10px;
+}
 h1#artist-title {
-  z-index: 1; width:100%; padding: 26px 0px 26px 0; 
+  z-index: 2; width:100%; padding: 26px 0px 26px 0; 
   position: fixed; top: 34px; letter-spacing: 1px;
   font: 23px 'colaborate-thin'; 
   background: url(main/main/background-texture.jpg);
@@ -328,12 +396,21 @@ h1#artist-title a:active {color: rgba(1,1,1,1); text-decoration: none;}
   letter-spacing: normal;
   text-transform: uppercase;
   vertical-align: 30%;
-  background: #000; padding: 5px; 
+  padding: 5px; 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   font: bold 10px 'Helvetica Neue';
-  color: rgba(255,255,255,.9);
+  /*background: #000; color: rgba(255,255,255,.9);*/
+  
+  background: #fff; color: #333;
+  text-shadow: none;
+  -webkit-box-shadow: 2px 2px 6px #555;
+  -moz-box-shadow: 2px 2px 6px #555;
+  box-shadow: 2px 2px 6px #555;
+}
+.cbp-fwslider li span i {
+  font-size:8px; position: relative; bottom: 1px; 
 }
 
 /* Wookmark Plugin
@@ -342,7 +419,7 @@ h1#artist-title a:active {color: rgba(1,1,1,1); text-decoration: none;}
 .clearfix {
 height: 100%;
 position: relative; 
-margin: 0;
+margin: 0; padding: 0;
 }
 .view ali:nth-child(3n) {
 height: 175px;
@@ -354,52 +431,5 @@ padding-bottom: 30px;
 height: 250px;
 }
 
-
-
-
-
-
-
-button.signup {
-  height: 32px; width: 53px; color: #555; font-size: 10px;
-  -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  border: 1px solid #d9d9d9;
-  background: 
-    -webkit-linear-gradient(top, #F8F8F8, #EEE);
-  background: 
-    -moz-linear-gradient(top, #F8F8F8, #EEE);
-  background: 
-    -o-linear-gradient(top, #F8F8F8, #EEE);
-  background: 
-    linear-gradient(top, #F8F8F8, #EEE);    
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;    
-}
-button.signup:hover {
-  border: 1px solid #d3d3d3;
-  cursor: pointer;
-  background: -moz-linear-gradient(
-    top,
-    #ffffff 0%,
-    #dedede);
-  background: -webkit-gradient(
-    linear, left top, left bottom, 
-    from(#ffffff),
-    to(#dedede));
-  -moz-box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  -webkit-box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  text-shadow:
-    0px 0px 0px rgba(000,000,000,0),
-    0px 2px 0px rgba(255,255,255,1);
-}
 
 

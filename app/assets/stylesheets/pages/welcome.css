@@ -23,9 +23,9 @@
 }
 #slides { padding-bottom: 12px; } 
 footer {
-  width: 300px;
+  width: 220px; height: 50px; 
   color: #aaa; font-size: 10px;
-  position: relative; bottom: 0; left: 340px;
+  position: relative; bottom: 0; left: 400px;
 }
 
 /* Feature
@@ -250,7 +250,7 @@ span.boxtop {
   height: 40px; width: 300px; 
   text-align: center;
   text-decoration: none;
-  text-shadow:  0 1px 0 rgba(0,0,0,0.5);
+  text-shadow: inset 0 1px 0 rgba(0,0,0,0.5);
   white-space: nowrap;
   
   -moz-user-select: none;
@@ -279,7 +279,8 @@ span.boxtop {
 }
 
 .form-5 input[type=text],
-.form-5 input[type=password] {
+.form-5 input[type=password],
+.form-5 input[type=email] {
     width: 100%;
     height: 50px;
     padding: 0 10px;
@@ -295,13 +296,13 @@ span.boxtop {
     font-size: 14px;       
 }
 
-.form-5 input[name=top] {
+.form-5 input[name=top], .form-5 input[name=FNAME] {
     border-bottom: 1px solid #fff; /* Fallback */
     border-bottom: 1px solid rgba(255,255,255,0.7);
     border-radius: 10px 10px 0 0;
 }
 
-.form-5 input[name=up] {
+.form-5 input[name=up], .form-5 input[name=EMAIL] {
     border-top: 1px solid #CCC; /* Fallback */
     border-top: 1px solid rgba(0,0,0,0.1);
     border-radius: 0 0 10px 10px;
@@ -309,8 +310,10 @@ span.boxtop {
 
 .form-5 input[type=text]:hover,
 .form-5 input[type=password]:hover,
+.form-5 input[type=email]:hover,
 .form-5 input[type=text]:focus,
-.form-5 input[type=password]:focus {
+.form-5 input[type=password]:focus,
+.form-5 input[type=email]:focus {
     background: #f7def7; /* Fallback */
     background: rgba(255,255,255,0.4);
     outline: none;

@@ -1,0 +1,162 @@
+<% provide(:title, 'Me Like Bees') %>
+<%= stylesheet_link_tag 'pages/grid3' %>
+<%= stylesheet_link_tag 'font/entypo' %>
+
+  <!-- Twitter Widget -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
+
+  <!-- Share -->
+  <script>
+    (function($){
+      $.fn.styleddropdown = function(){
+        return this.each(function(){
+          obj = $(this)
+          obj.find('.share').click(function() { //onclick event, 'list' fadein
+          obj.find('.list').fadeIn(400);
+          
+          $(document).keyup(function(event) { //keypress event, fadeout on 'escape'
+            if(event.keyCode == 27) {
+            obj.find('.list').fadeOut(400);
+            }
+          });
+          
+          obj.find('.list').hover(function(){ },
+            function(){
+              $(this).fadeOut(400);
+            });
+          });
+          
+          obj.find('.list li').click(function() { //onclick event, change field value with selected 'list' item and fadeout 'list'
+          obj.find('.share')
+            .val($(this).html())
+            .css({
+              'background':'#fff',
+              'color':'#333'
+            });
+          obj.find('.list').fadeOut(400);
+          });
+        });
+      };
+    })(jQuery);
+  
+    $(function(){
+      $('.avatar').styleddropdown();
+    });
+  </script>
+
+<!-- 
+....................................................................
+-->
+
+<%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<div class="clearfix">
+<img id="content-background" src="/assets/main/main/page-background.png"/>
+
+  <div class="avatar">
+  	<%= image_tag "main/banners/mlb1.jpg" %>
+
+    <table class="avp">
+      <td>
+        <i class="icon-map-marker"></i> Joplin, MO
+      </td>
+      <td> 
+        <strong style="margin-right:3px">Genres:</strong> Indie / Alternative / Rock
+      </td>
+      <td>
+        <strong style="margin-right:3px">Record Label:</strong> LoveWay Records
+      </td>
+      <td>
+        <a class="flat-link" href="https://www.facebook.com/melikebees" target="_blank"><i class="icon-facebook-sign"></i> Facebook </a>
+      </td>
+      <td>
+        <strong style="margin-right:3px">Website:</strong> <a href="http://melikebees.com" target="_blank">melikebees.com</a>
+      </td>
+      <td>
+        <button class="share" type="submit" style="float:right;margin-right:2px;"><i class="icon-share"></i></button>
+      </td>
+    </table>  
+    <ul class="list">
+        <a href="#" onclick="
+            window.open(
+              'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+              'facebook-share-dialog', 
+              'width=626,height=436'); 
+            return false;">
+          <li>
+            &#62222;    
+          </li>
+        </a>  
+        <a href="https://twitter.com/home?status=Check out Me Like Bees artist page on Hippo+(http%3A%2F%2Fhippoartists.com%2Fmelikebees)"target="_blank">
+          <li>
+          &#62217;
+          </li>
+        </a>
+        <a href="http://pinterest.com/pin/create/bookmarklet/?media=[MEDIA]&url=http%3A%2F%2Fhippoartists.com%2Fmelikebees&is_video=false&description=Check out Me Like Bees artist page on Hippo"target="_blank">
+          <li>
+            &#62226;
+          </li> 
+        </a>
+        <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fhippoartists.com%2Fmelikebees&t=Check out Me Like Bees artist page on Hippo "target="_blank">
+          <li>
+            &#62229;
+          </li> 
+        </a>
+        <a href="mailto:?subject=Check out Me Like Bees artist page on Hippo&amp;body=www.hippoartists.com/melikebees" title="Share by Email">
+          <li>
+            &#9993;
+          </li>
+        </a>
+    </ul>
+  </div>
+
+
+  <div class="grid_6" style="margin-top:-14px;">
+    <h4>About</h4> 
+    <div class="about"> 
+      <p style="font: 24px 'lane - narrow';">
+        all the groovyness of George Clinton and all the Sex Appeal of Bruce Vilanch.
+      </p>
+      <p>
+        Me Like Bees is an indie/alternative rock band from Joplin Missouri and is made up of Pete Burton (lead guitar), Nick Bynum (bass), Luke Sheafer (vocals/guitar), and Timothy Cote (drums).
+      </p>
+      <p>
+        Formed in May of 2009, the group has developed their sound with influences from bands such as Modest Mouse, Arcade Fire and The White Stripes. The “Me Like Bees” sound, like many of their influences, is based upon the idea of moving music forward with interesting and simple melodies. Although simple, the band maintains the listeners’ attention using irregular dynamics and asymmetric song structure. The group takes a quality control approach to songwriting, with each member bringing their own creative ideals to every aspect of the process. 
+      </p>
+    </div>
+  </div><div class='clear'>&nbsp;</div>
+
+  <div class="comment-section grid_6">
+    <h4 style="margin:44px 0 28px 9px;">Latest Tweet</h4>  
+    <div id="twitter-wrapper">
+      <a class="twitter-timeline" 
+       href="https://twitter.com/melikebees" 
+       data-theme="custom"
+       data-tweet-limit="1"
+       data-chrome="nofooter noheader noborders noscrollbar transparent"
+       width="418"
+       data-widget-id="371039773730697216">
+       Tweets by @MeLikeBees
+      </a>
+    </div>
+    <b class="border-notch"></b>  
+    <b class="notch"></b>
+  </div>
+
+  <div class="grid_6">
+    <h4 style="margin:28px 0 28px 9px;">Current Events</h4> 
+    <div class="map-section">
+    <iframe frameBorder='0' src='http://a.tiles.mapbox.com/v3/kalaniakuna.map-r3n0flze.html#4/38.685509760012/-91.40625'></iframe>
+    <b class="border-notch"></b>  
+    <b class="notch"></b>
+    </div>
+  </div>
+</div>
+
+</section>

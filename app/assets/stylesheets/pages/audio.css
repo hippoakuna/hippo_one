@@ -1,18 +1,14 @@
-/* Base Parts
--------------------------------------------------------------------------------------*/
 
 #content {
-  min-height: 560px;
-  margin: 8em 0 0 4.4em; padding: 18px; 
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-  border-right: 1px solid rgba(150,150,150,.2); 
-  background: rgb(246,246,246);
-  -webkit-box-shadow: 0px 0px 5px 0px #ccc;
-  -moz-box-shadow:    0px 0px 5px 0px #ccc;
-  box-shadow:         0px 0px 5px 0px #ccc;
+  height: 100%; 
+  margin: 8em 0 0 4.4em; padding: 18px;
 }
+img#content-background {
+  position: fixed; z-index: -9999;
+  margin-left: -18px; width: 910px;
+  top:-36px;
+}
+
 
 /* Pods
 -------------------------------------------------------------------------------------*/
@@ -43,7 +39,7 @@
   margin: -16px 0 18px 0;
 }
 span.audio-actions { 
-   position:relative; left:333px; top: -10px;
+   position:relative; left:340px; top: -12px;
    margin: 0; padding: 0;
    opacity: .5;
 }
@@ -104,9 +100,6 @@ li.playing:before { content: url('audiojs/play-butt.png'); position: absolute; l
 /* Album Tiles
 -------------------------------------------------------------------------------------*/
 
-#main {
-  height: 100%;
-}
 .view {
    margin-top:3px; 
    width: 397px;
@@ -163,6 +156,11 @@ li.playing:before { content: url('audiojs/play-butt.png'); position: absolute; l
   height: 397px;
   background: url('main/cds/blankback.png');
   margin-bottom: 12px;
+}
+.view img.coverart:hover {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -223,3 +221,165 @@ button.cdact:hover {
   opacity: .9; 
 }
 
+
+
+
+/* #Header Dropdown
+-------------------------------------------------------------------------------------*/
+
+.submenu {
+  width: 160px;
+  background: rgba(255,255,255,.9);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+ul.root {
+  list-style:none;
+  margin: 0; padding: 0;
+}
+ul.root li i {
+  margin-right: 5px;
+}
+ul.root li a {
+  color: #555;
+  display: block;
+  font: normal 13px 'lato';
+  padding: 6px 15px;
+  cursor: pointer;
+  text-decoration:none;
+}
+ul.root li a:hover{
+  background: #1794B3;
+  color: #fff;
+  text-decoration: none;   
+}
+ul.root li {
+  padding-top: 5px; padding-bottom: 5px;
+  border-bottom: 1px solid #d0d0d0;
+}
+ul.root li:last-child {
+  border-bottom: 0 none;
+}
+
+/*.submenu {
+  width: 130px;
+  position: relative; left: 270px;
+  background: rgba(255,255,255,.9);
+  display: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+ul.root {
+  list-style:none;
+  margin: 0; padding: 0;
+}
+ul.root li i {
+  margin-right: 5px;
+}
+ul.root li a {
+  color: #555;
+  display: block;
+  font: normal 13px 'lato';
+  padding: 6px 15px;
+  cursor: pointer;
+  text-decoration:none;
+}
+ul.root li a:hover{
+  background: #1794B3;
+  color: #fff;
+  text-decoration: none;    
+}
+ul.root li {
+  padding-top: 5px; padding-bottom: 5px;
+}
+ul.root li:last-child {
+  border-top: 1px solid #d0d0d0;
+}
+
+.submenu .notch {
+  z-index: 2;
+  position: absolute;
+  top: -8px; 
+  right: 15px;
+  margin: 0; padding: 0;
+  width: 0; height: 0;
+  border-bottom: 10px solid rgba(255,255,255,.95);
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent;  
+}
+.submenu .border-notch {
+  z-index: 2;
+  position: absolute;
+  top: -10px; 
+  right: 15px;
+  margin: 0; padding: 0;
+  width: 0; height: 0;
+  border-bottom: 10px solid rgba(225,225,225,.95);
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent;  
+}
+
+
+<%= javascript_include_tag "dropdownjs/jquery.min" %>
+
+  <!-- Dropdown Menu -->
+ <script>
+    $(document).ready(function()
+    {
+    $(".dropmenu").click(function()
+    {
+    var X=$(this).attr('id');
+
+    if(X==1)
+    {
+    $(".submenu").hide();
+    $(this).attr('id', '0');  
+    }
+    else
+    {
+
+    $(".submenu").show();
+    $(this).attr('id', '1');
+    }
+      
+    });
+
+    //Mouseup textarea false
+    $(".submenu").mouseup(function()
+    {
+    return false
+    });
+    $(".dropmenu").mouseup(function()
+    {
+    return false
+    });
+
+
+    //Textarea without editing.
+    $(document).mouseup(function()
+    {
+    $(".submenu").hide();
+    $(".dropmenu").attr('id', '');
+    });
+      
+    });
+  </script>
+
+    <div class="submenu" style="display:none;">
+      <b class="border-notch"></b>  
+      <b class="notch"></b>
+      <ul class="root">
+        <li><a href="#"><i class="icon-download-alt"></i> Download</a></li>
+        <li><a href="#"><i class="icon-apple"></i> Buy on iTunes</a></li>
+      </ul>
+    </div>
+
+*/    

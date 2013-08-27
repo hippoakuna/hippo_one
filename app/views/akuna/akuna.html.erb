@@ -1,0 +1,149 @@
+<% provide(:title, 'Akuna') %>
+<%= stylesheet_link_tag 'pages/grid3' %>
+<%= stylesheet_link_tag 'font/entypo' %>
+
+
+  <!-- Twitter Widget -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
+
+  <!-- Share -->
+  <script>
+    (function($){
+      $.fn.styleddropdown = function(){
+        return this.each(function(){
+          obj = $(this)
+          obj.find('.share').click(function() { //onclick event, 'list' fadein
+          obj.find('.list').fadeIn(400);
+          
+          $(document).keyup(function(event) { //keypress event, fadeout on 'escape'
+            if(event.keyCode == 27) {
+            obj.find('.list').fadeOut(400);
+            }
+          });
+          
+          obj.find('.list').hover(function(){ },
+            function(){
+              $(this).fadeOut(400);
+            });
+          });
+          
+          obj.find('.list li').click(function() { //onclick event, change field value with selected 'list' item and fadeout 'list'
+          obj.find('.share')
+            .val($(this).html())
+            .css({
+              'background':'#fff',
+              'color':'#333'
+            });
+          obj.find('.list').fadeOut(400);
+          });
+        });
+      };
+    })(jQuery);
+  
+    $(function(){
+      $('.avatar').styleddropdown();
+    });
+  </script>
+
+<!-- 
+....................................................................
+-->
+
+ <%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<%= image_tag "main/main/page-background.png", id: "content-background" %>
+<div class="clearfix">
+
+
+  <div class="avatar" >
+    <%= image_tag "main/banners/aabnrblk2-2.png" %>  
+    
+    <table class="avp">
+      <td>
+        <i class="icon-map-marker"></i> Joplin, MO
+      </td>
+      <td> 
+        <strong style="margin-right:3px">Genres:</strong> Indie / Rock / Pop
+      </td>
+      <td>
+        <a class="flat-link" href="https://www.facebook.com/kalaniakuna" target="_blank"><i class="icon-facebook-sign"></i> Facebook </a>
+      </td>
+      <td style="width:430px;">
+      </td>
+      <td>
+        <button class="share" type="submit" style="float:right;margin-right:2px;"><i class="icon-share"></i></button>
+      </td>
+    </table>  
+    <ul class="list">
+        <a href="#" onclick="
+            window.open(
+              'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+              'facebook-share-dialog', 
+              'width=626,height=436'); 
+            return false;">
+          <li>
+            &#62222;    
+          </li>
+        </a>  
+        <a href="https://twitter.com/home?status=Check out Akuna's artist page on Hippo+(http%3A%2F%2Fhippoartists.com%2Fakuna)"target="_blank">
+          <li>
+          &#62217;
+          </li>
+        </a>
+        <a href="http://pinterest.com/pin/create/bookmarklet/?media=[MEDIA]&url=http%3A%2F%2Fhippoartists.com%2Fakuna&is_video=false&description=Check out Akuna's artist page on Hippo"target="_blank">
+          <li>
+            &#62226;
+          </li> 
+        </a>
+        <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fhippoartists.com%2Fakuna&t=Check out Akuna's artist page on Hippo "target="_blank">
+          <li>
+            &#62229;
+          </li> 
+        </a>
+        <a href="mailto:?subject=Check out Akuna's artist page on Hippo&amp;body=www.hippoartists.com/akuna" title="Share by Email">
+          <li>
+            &#9993;
+          </li>
+        </a>
+    </ul>
+
+  <div class="grid_6" style="margin-top:-14px;">
+    <h4>About</h4> 
+    <div class="about"> 
+      <p style="font: 24px 'lane - narrow';">
+        My name is Kalani. I'm a midwestern-based Hawaiian from the westcoast.
+      </p>
+      <p>
+         I design and create all sorts of things, like websites and music. I have a lot of projects I'm working on and a lot more that I want to start. This page will help me showcase my creative projects, or my nonesense. Time will tell. 
+      </p>
+    </div>
+  </div><div class='clear'>&nbsp;</div>
+
+  <div class="comment-section grid_6">
+    <h4 style="margin:44px 0 28px 9px;">Latest Tweet</h4>  
+    <div id="twitter-wrapper">
+      <a class="twitter-timeline" 
+       href="https://twitter.com/kalaniakuna" 
+       data-theme="custom"
+       data-tweet-limit="1"
+       data-chrome="nofooter noheader noborders noscrollbar transparent"
+       width="418"
+       data-widget-id="347083215355383808">
+       Tweets by @kalaniakuna
+      </a>
+    </div>
+    <b class="border-notch"></b>  
+    <b class="notch"></b>
+  </div>
+
+
+</div>
+</section>
+
+<script src="//assets.pinterest.com/js/pinit.js"></script>

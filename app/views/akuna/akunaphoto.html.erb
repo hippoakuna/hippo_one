@@ -1,0 +1,139 @@
+<% provide(:title, 'Akuna') %>
+<%= stylesheet_link_tag 'pages/photo' %>
+<%= javascript_include_tag "wookmark/jquery.wookmark" %>
+
+
+<!-- 
+....................................................................
+-->
+
+ <%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<%= image_tag "main/main/page-background.png", id: "content-background" %>
+<div id="main" class="clearfix">
+
+
+      <ul id="tiles" class="two">     
+        <li><a href='/assets/main/photography/Route66/2.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/Route66/2.jpg", size: "400x228" %>
+        </a></li>
+        <li><a href='/assets/main/photography/WineCountry/1.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/WineCountry/1.jpg", size: "400x267" %>
+        </a></li>
+        <li><a href='/assets/main/photography/WineCountry/2.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/WineCountry/2.jpg", size: "400x267" %>
+        </a></li>
+        <li><a href='/assets/main/photography/Route66/2-2.png' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/Route66/2-2.png", size: "400x228" %>
+        </a></li>
+        
+
+        <li><a href='/assets/main/photography/CaptureTheFlag/1.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/CaptureTheFlag/1.jpg", size: "400x228" %>
+        </a></li>
+        <li><a href='/assets/main/photography/CaptureTheFlag/2.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/CaptureTheFlag/2.jpg", size: "400x228" %>
+        </a></li>
+        <li><a href='/assets/main/photography/CaptureTheFlag/5.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/CaptureTheFlag/5.jpg", size: "400x228" %>
+        </a></li>
+
+        <li><a href='/assets/main/photography/Ganesha/5.png' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/Ganesha/5.png", size: "400x228" %>
+        </a></li>
+        <li><a href='/assets/main/photography/Ganesha/1.png' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/Ganesha/1.png", size: "400x228" %>
+        </a></li>
+        <li><a href='/assets/main/photography/Ganesha/4.png' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/Ganesha/4.png", size: "400x228" %>
+        </a></li>
+
+        
+        <li><a href='/assets/main/photography/Route66/3.png' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/Route66/3.png", size: "400x228" %>
+        </a></li>     
+        <li><a href='/assets/main/photography/WineCountry/3.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/photography/WineCountry/3.jpg", size: "400x267" %>
+        </a></li>
+        
+        
+      </ul>
+
+      <div id="loader">
+        <div id="loaderCircle"></div>
+      </div>
+
+</div>
+</section>
+
+<!-- itemWidth 278 -->
+
+  <!-- Wookmark Plugin -->
+  <script>
+    $(document).ready(new function() {
+      // Prepare layout options.
+      var options = {
+        autoResize: true, // This will auto-update the layout when the browser window is resized.
+        container: $('#main'), // Optional, used for some extra CSS styling
+        offset: 9, // Optional, the distance between grid items // @ 18 or 10
+        itemWidth: 420 // Optional, the width of a grid item // @ 270 or 202
+      };
+      
+      // Get a reference to your grid items.
+      var handler = $('#tiles li');
+      
+      // Call the layout function.
+      handler.wookmark(options);
+      
+      // Capture clicks on grid items.
+      handler.click(function(){
+        
+        // Update the layout.
+        handler.wookmark();
+      });
+      $(window).resize(function() {
+       slider.reloadShow();
+      });      
+    });
+  </script>

@@ -1,0 +1,296 @@
+<% provide(:title, 'Me Like Bees') %>
+<%= stylesheet_link_tag 'pages/photo' %>
+<%= javascript_include_tag "wookmark/jquery.wookmark" %>
+
+<!-- 
+....................................................................
+-->
+
+<%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<div id="main" class="clearfix">
+<img id="content-background" src="/assets/main/main/page-background.png"/>
+
+      <ul id="tiles" class="three">   
+
+        <li><a href='https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/993659_605500366137307_845691936_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/993659_605500366137307_845691936_n.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='https://sphotos-b.xx.fbcdn.net/hphotos-frc3/970629_605500106137333_249306186_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-b.xx.fbcdn.net/hphotos-frc3/970629_605500106137333_249306186_n.jpg", size: "256x384" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn2/1069372_605500109470666_1591755137_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn2/1069372_605500109470666_1591755137_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn1/935061_605500092804001_1436685363_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn1/935061_605500092804001_1436685363_n.jpg", size: "256x384" %>
+        </a></li> 
+        <li><a href='https://sphotos-b.xx.fbcdn.net/hphotos-ash4/1075723_605500156137328_140773781_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-b.xx.fbcdn.net/hphotos-ash4/1075723_605500156137328_140773781_n.jpg", size: "256x171" %>
+        </a></li> 
+        <li><a href='https://sphotos-a.xx.fbcdn.net/hphotos-ash4/1069905_605500166137327_1984854353_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-a.xx.fbcdn.net/hphotos-ash4/1069905_605500166137327_1984854353_n.jpg", size: "256x384" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/28745_605500162803994_432777072_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/28745_605500162803994_432777072_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://sphotos-a.xx.fbcdn.net/hphotos-ash3/994547_605500189470658_1077092153_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-a.xx.fbcdn.net/hphotos-ash3/994547_605500189470658_1077092153_n.jpg", size: "256x384" %>
+        </a></li>
+        <li><a href='https://sphotos-a.xx.fbcdn.net/hphotos-prn1/66717_605500202803990_1095980216_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-a.xx.fbcdn.net/hphotos-prn1/66717_605500202803990_1095980216_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://sphotos-b.xx.fbcdn.net/hphotos-ash4/1001672_605500236137320_1423059584_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-b.xx.fbcdn.net/hphotos-ash4/1001672_605500236137320_1423059584_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://sphotos-a.xx.fbcdn.net/hphotos-prn2/1069228_605500222803988_1702109116_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-a.xx.fbcdn.net/hphotos-prn2/1069228_605500222803988_1702109116_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/943623_605500249470652_518399433_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/943623_605500249470652_518399433_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://sphotos-a.xx.fbcdn.net/hphotos-frc1/1006266_605500272803983_1841601122_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-a.xx.fbcdn.net/hphotos-frc1/1006266_605500272803983_1841601122_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/971147_605500296137314_2060202402_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/971147_605500296137314_2060202402_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/988261_605500309470646_1092132706_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/988261_605500309470646_1092132706_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://sphotos-a.xx.fbcdn.net/hphotos-ash3/601747_605500332803977_1247472712_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://sphotos-a.xx.fbcdn.net/hphotos-ash3/601747_605500332803977_1247472712_n.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/1005635_605500349470642_1656045853_n.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/1005635_605500349470642_1656045853_n.jpg", size: "256x171" %>
+        </a></li>
+
+        <li><a href='/assets/main/melikebees/6.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/6.jpg", size: "256x171" %>
+        </a></li>
+        <li><a href='/assets/main/melikebees/8.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/8.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/9.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/9.jpg", size: "256x384" %>
+        </a></li>    
+        <li><a href='/assets/main/melikebees/10.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/10.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/11.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/11.jpg", size: "256x171" %>
+        </a></li>    
+        <li><a href='/assets/main/melikebees/12.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/12.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/13.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/13.jpg", size: "256x171" %>
+        </a></li>     
+        <li><a href='/assets/main/melikebees/14.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/14.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/15.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/15.jpg", size: "256x171" %>
+        </a></li>            
+        <li><a href='/assets/main/melikebees/16.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/16.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/17.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/17.jpg", size: "256x384" %>
+        </a></li>       
+        <li><a href='/assets/main/melikebees/18.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/18.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/19.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/19.jpg", size: "256x171" %>
+        </a></li>     
+        <li><a href='/assets/main/melikebees/20.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/20.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/21.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/21.jpg", size: "256x171" %>
+        </a></li>    
+        <li><a href='/assets/main/melikebees/22.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/22.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/23.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/23.jpg", size: "256x171" %>
+        </a></li>    
+        <li><a href='/assets/main/melikebees/24.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/24.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/25.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/25.jpg", size: "256x171" %>
+        </a></li>    
+        <li><a href='/assets/main/melikebees/26.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/26.jpg", size: "256x171" %>
+        </a></li>  
+
+        <li><a href='/assets/main/melikebees/1.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/1.jpg", size: "256x171" %>
+        </a></li>  
+        <li><a href='/assets/main/melikebees/2.jpg' 
+           class='lightview' 
+           data-lightview-group='gallery'
+           data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+          <%= image_tag "main/melikebees/2.jpg", size: "256x171" %>
+        </a></li>
+        
+
+      </ul>
+
+      <div id="loader">
+        <div id="loaderCircle"></div>
+      </div>
+
+
+</div>
+</section>
+
+  <!-- Wookmark Plugin -->
+  <script>
+    $(document).ready(new function() {
+      // Prepare layout options.
+      var options = {
+        autoResize: true, // This will auto-update the layout when the browser window is resized.
+        container: $('#main'), // Optional, used for some extra CSS styling
+        offset: 9, // Optional, the distance between grid items // @ 18 or 10
+        itemWidth: 278 // Optional, the width of a grid item // @ 270 or 202
+      };
+      
+      // Get a reference to your grid items.
+      var handler = $('#tiles li');
+      
+      // Call the layout function.
+      handler.wookmark(options);
+      
+      // Capture clicks on grid items.
+      handler.click(function(){
+        
+        // Update the layout.
+        handler.wookmark();
+      });
+      $(window).resize(function() {
+       slider.reloadShow();
+      });      
+    });
+  </script>

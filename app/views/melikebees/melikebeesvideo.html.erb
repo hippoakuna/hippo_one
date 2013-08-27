@@ -1,0 +1,63 @@
+<% provide(:title, 'Me Like Bees') %>
+<%= stylesheet_link_tag 'pages/video' %>
+<%= javascript_include_tag "hoverjs/jquery" %>
+<%= javascript_include_tag "hoverjs/jquery.hoverscroll" %>
+
+  <!-- Hoverscroll --> 
+  <script>
+  $(document).ready(function() {
+        // Creating hoverscroll with fixed arrows
+    $('.my-list').hoverscroll({
+            fixedArrows: false,
+            rtl: false
+        });
+        // Starting the movement automatically at loading
+        // @param direction: right/bottom = 1, left/top = -1
+        // @param speed: Speed of the animation (scrollPosition += direction * speed)
+        var direction = -1,
+            speed = 3;
+        $(".my-list")[0].startMoving(direction, speed);
+  }); 
+  </script>
+
+<!-- 
+....................................................................
+-->
+
+<%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<div id="main" class="clearfix">   
+<img id="content-background" src="/assets/main/main/page-background.png"/>
+
+    <div class="avatar">
+      <iframe class="feat-vid" src="//www.youtube.com/embed/hKpNpvJ7n2o?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <p>
+        <strong>Me Like Bees - The Ides (Official)</strong> <a href="http://www.youtube.com/user/MeLikeBees?feature=watch" target="_blank">@MeLikeBees</a> <span style="margin:0 3px 0 3px"> | </span><i class="icon-time" style="margin-right:3px;"></i> June 12, 2013
+      </p>      
+    </div>
+
+    <hr>
+
+    <ul class="my-list" style="list-style:none">
+      <li><iframe src="//www.youtube.com/embed/dlmWEpQOQ6I?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <p>The Ides - "The Outtakes"</p>
+      </li> 
+
+      <li><iframe src="//www.youtube.com/embed/Ifme7VRU_uY?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <p>The Ides Teaser</p>
+      </li>
+
+      <li><iframe src="//www.youtube.com/embed/S47fVy9IcPY?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <p>Naked Trees - Me Like Bees</p>
+      </li>
+
+    </ul><hr style="margin-bottom:-28px;">
+
+
+</div>
+</section>

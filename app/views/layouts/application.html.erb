@@ -34,7 +34,6 @@ hippoartists.com © Hippo, LLC.
       <%= content_tag(:div, value, class: "alert alert-#{key}") %>
     <% end %>
     <%= yield %>
-    <%= debug(params) if Rails.env.development? %>
   </div>
 </body>
 

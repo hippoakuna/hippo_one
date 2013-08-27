@@ -1,0 +1,69 @@
+<% provide(:title, 'Akuna') %>
+<%= stylesheet_link_tag 'pages/audio' %>
+<%= stylesheet_link_tag 'js/lightview/lightview' %>
+<%= stylesheet_link_tag 'js/lightview/demo_inline' %>
+<%= javascript_include_tag "wookmark/jquery.wookmark-audio" %>
+<%= javascript_include_tag "sm2/soundmanager2" %>
+<%= javascript_include_tag "sm2/inlineplayer" %>
+
+<!-- 
+....................................................................
+-->
+
+ <%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<%= image_tag "main/main/page-background.png", id: "content-background" %> 
+<div class="clearfix">
+
+ <div id="sm2-container">
+  <!-- SM2 flash goes here -->
+ </div>
+
+  <div class="view"> 
+    <%= image_tag "main/cds/akuna/akna.png", class: "coverart", size: "397x397" %>    
+    <table class="playlist">
+      <th valign="top" id="tracks">   
+        <ol class="graphic">
+          <li><a href="/assets/sm2/mp3/record/WaterIII.m4a">Water (Clip)</a></li><span class="audio-actions"><i class="icon-music"></i></span>    
+        </ol>  
+      </th>
+    </table>
+  </div>
+
+</div>
+</section>
+
+  <!-- Wookmark Plugin -->
+  <script>
+    $(document).ready(new function() {
+      // Prepare layout options.
+      var options = {
+        autoResize: true, 
+        offset: 18, 
+        itemWidth: 417 // Optional, the width of a grid item // @ 270 or 202
+      };
+      
+      // Get a reference to your grid items.
+      var handler = $('.view');
+      
+      // Call the layout function.
+      handler.wookmark(options);
+      
+      // Capture clicks on grid items.
+      handler.click(function(){
+
+        // Update the layout.
+        handler.wookmark();
+      });
+
+      $(window).resize(function() {
+        slider.reloadShow();
+      });      
+    });  
+  </script>
+

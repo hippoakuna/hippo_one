@@ -1,17 +1,12 @@
-/* Base Parts
--------------------------------------------------------------------------------------*/
 
 #content {
-  min-height: 560px;
+  height: 100%; 
   margin: 8em 0 0 4.4em; padding: 18px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-  border-right: 1px solid rgba(150,150,150,.2); 
-  background: rgb(246,246,246);
-  -webkit-box-shadow: 0px 0px 5px 0px #ccc;
-  -moz-box-shadow:    0px 0px 5px 0px #ccc;
-  box-shadow:         0px 0px 5px 0px #ccc;
+}
+img#content-background {
+  position: fixed; z-index: -9999;
+  margin-left: -18px; width: 910px;
+  top:-36px;
 }
 
 /* Pods
@@ -62,6 +57,7 @@ div.clear {
 -------------------------------------------------------------------------------------*/
 
 #tiles {
+  z-index: 1;
   list-style-type: none;
   position: relative; /** Needed to ensure items are laid out relative to this container **/
   margin: 0; margin-top: 3px;
