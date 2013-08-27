@@ -24,7 +24,6 @@ module HippoOne
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.assets.enabled = true
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.css *.js)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.css *.js *.ttf *.otf *.svg *.eot *.woff)
   end
 end
