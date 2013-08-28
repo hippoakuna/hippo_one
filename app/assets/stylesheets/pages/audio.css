@@ -127,7 +127,7 @@ li.playing:before { content: url('audiojs/play-butt.png'); position: absolute; l
 }
 .view p {
   text-align: left;
-  font: normal 14px 'lato';
+  font: normal 14px 'Lato';
   margin-left: 25px; margin-right: 25px;
 }
 .view p span.album-title {
@@ -248,7 +248,7 @@ ul.root li i {
 ul.root li a {
   color: #555;
   display: block;
-  font: normal 13px 'lato';
+  font: normal 13px 'Lato';
   padding: 6px 15px;
   cursor: pointer;
   text-decoration:none;

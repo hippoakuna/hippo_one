@@ -75,7 +75,7 @@ table.avp td {
   height: 40px;
   border-right:1px solid rgba(230,230,230,.8); 
   text-align: center;
-  font: normal 12px 'Helvetica Neue', 'lato', Helvetica;
+  font: normal 12px 'Helvetica Neue', 'Lato', Helvetica;
 }
 table.avp td:first-child {
   -webkit-border-bottom-left-radius: 5px;
@@ -134,7 +134,7 @@ table.avp td:last-child {
 .about {
   color: rgba(1,1,1,.8);
   margin: 0 9px 25px 0px;
-  font: 18px 'lato';
+  font: 18px 'Lato';
   line-height: 1.7em;
 }
 .comments {
@@ -156,7 +156,7 @@ button.share {
   border: 0 none;
   padding: 0; margin: 0;
   color: #666;
-  font: 12px 'Helvetica Neue', 'lato', Helvetica;
+  font: 12px 'Helvetica Neue', 'Lato', Helvetica;
   cursor: pointer;
 }
 button.facebook a {

@@ -146,10 +146,10 @@ img.topfloat {
     box-shadow: 0 1px 1px rgba(0,0,0,.2) inset, 0 1px 0 rgba(255,255,255,.2);
     border: 1px solid #d9d9d9;
 }  
-.search ::-webkit-input-placeholder { color: #666; font-family: 'lato'; }
-.search :-moz-placeholder { color: #666; font-family: 'lato'; }
-.search ::-moz-placeholder { color: #666; font-family: 'lato'; }
-.search :-ms-input-placeholder { color: #666; font-family: 'lato'; }
+.search ::-webkit-input-placeholder { color: #666; font-family: 'Lato'; }
+.search :-moz-placeholder { color: #666; font-family: 'Lato'; }
+.search ::-moz-placeholder { color: #666; font-family: 'Lato'; }
+.search :-ms-input-placeholder { color: #666; font-family: 'Lato'; }
 
 
 /* #Header #Right Buttons
