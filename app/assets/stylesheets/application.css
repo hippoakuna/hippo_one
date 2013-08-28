@@ -1,12 +1,14 @@
 /*
  *= require_self
  *= require base/grid960
- *= require font/font-awesome
+ *= require font/fonts
  *= require js/hoverjs/jquery.hoverscroll
  *= require js/lightview/lightview
  *= require js/lightview/demo_inline
  */
 
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+/*<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>*/
 
 /* Basic
 -------------------------------------------------------------------------------------*/
