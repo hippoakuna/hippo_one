@@ -66,7 +66,6 @@ div.clear {
 #tiles li {
   display: none;
     cursor: pointer; 
-  /*background: rgba(255,255,255,.8); */
   background: rgb(255,255,255);
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
@@ -110,7 +109,7 @@ div.clear {
 #tiles li p.pic-cap {
   display: none;
   color: #666;
-  font: normal 12px 'Lato', 'Entypo', 'Helvetica Neue', Helvetica;  
+  font: normal 12px 'Lato', 'Helvetica Neue', Helvetica;  
 }
 
 

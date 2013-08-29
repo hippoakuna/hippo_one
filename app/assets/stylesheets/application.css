@@ -1,7 +1,6 @@
 /*
  *= require_self
  *= require base/grid960
- *= require fonts/fonts
  *= require js/hoverjs/jquery.hoverscroll
  *= require js/lightview/lightview
  *= require js/lightview/demo_inline
@@ -152,15 +151,7 @@ button.signup {
   -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
   text-shadow:1px 1px 1px rgba(255,255,255, 1);
   border: 1px solid rgba(200,200,200,.3); 
-
-  /*background: rgb(247,247,247);
-  background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(242,242,242,1) 98%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(98%,rgba(242,242,242,1)));
-  background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
-  background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
-  background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
-  background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(242,242,242,1) 98%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f2f2f2',GradientType=0 );*/
+  
   background: rgb(255,255,255);
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
