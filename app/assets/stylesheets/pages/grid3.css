@@ -260,7 +260,7 @@ button.facebook a:hover {
 
     .avatar>ul.list { 
       display:none;
-      position:absolute; right: 0; top:0;
+      position:absolute; right: 1px; top:0;
       width:60px; height: 335px;
       margin:0; padding:100px 0px 45px 0px; list-style:none;
       background: rgba(255,255,255,.5);
@@ -271,7 +271,8 @@ button.facebook a:hover {
     .avatar>ul.list a:visited {color:#333;}
     .avatar>ul.list li {
       text-align: center;
-      padding:10px;
+      padding:15px 10px 15px 10px;
+      font-size: 25px;
     }
     .avatar>ul.list li:hover {
       background: rgba(255,255,255,.5); 
@@ -279,5 +280,4 @@ button.facebook a:hover {
     }
     .avatar>ul.list li:last-child { border:none }
 
-    ul.list li { font: normal 40px 'entypo-social', 'entypo'; }
-
+    /* font: normal 25px 'entypo-social', 'entypo'; padding:10px; */
