@@ -279,22 +279,5 @@ button.facebook a:hover {
     }
     .avatar>ul.list li:last-child { border:none }
 
-
-ul.list li {
-  font-family: "entypo-social", "entypo";
-  font-size: 40px;
-}
-ul.list li span {
-  font-family: "lato";
-  font-size: 20px;
-  text-transform: lowercase;
-  margin-bottom: 2px;
-}
-.title h5 {
-  font-family: "lato", "entypo";
-}
-.title h5 span {
-  font-size: 29px;
-}
-
+    ul.list li { font: normal 40px 'entypo-social', 'entypo'; }
 
