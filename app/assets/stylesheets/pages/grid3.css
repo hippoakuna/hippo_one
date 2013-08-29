@@ -260,8 +260,7 @@ button.facebook a:hover {
 
     .avatar>ul.list { 
       display:none;
-      /*position:relative; left: 793px; bottom:524px;*/
-      position:absolute; left: 792px; bottom:384px;
+      position:absolute; right: 0; top:0;
       width:60px; height: 335px;
       margin:0; padding:100px 0px 45px 0px; list-style:none;
       background: rgba(255,255,255,.5);
