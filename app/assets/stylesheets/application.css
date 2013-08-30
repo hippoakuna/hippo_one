@@ -316,7 +316,6 @@ h1#artist-title span {
   font: bold 11px 'Helvetica Neue';
   color: rgba(255,255,255,.9);
 }
-/* 2.7 // 86 / 183 / 293 / 169 */
   h1#artist-title span .notch2 {
     position: absolute;
     top: 2.63em; 
@@ -351,7 +350,7 @@ h1#artist-title span {
   h1#artist-title span .notched {
     position: absolute;
     top: 2.63em; 
-    left: 285px; /* 293 */
+    left: 285px; 
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;
@@ -382,18 +381,14 @@ h1#artist-title a:active {color: rgba(1,1,1,1); text-decoration: none;}
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font: bold 10px 'Helvetica Neue';
-  /*background: #000; color: rgba(255,255,255,.9);*/
-  
+  font: bold 10px 'Helvetica Neue';  
   background: #fff; color: #333;
   text-shadow: none;
   -webkit-box-shadow: 2px 2px 6px #555;
   -moz-box-shadow: 2px 2px 6px #555;
   box-shadow: 2px 2px 6px #555;
 }
-.cbp-fwslider li span i {
-  font-size:8px; position: relative; bottom: 1px; 
-}
+
 
 /* Wookmark Plugin
 -------------------------------------------------------------------------------------*/
