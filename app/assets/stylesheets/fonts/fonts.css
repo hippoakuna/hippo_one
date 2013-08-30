@@ -16,15 +16,15 @@
 ------------------------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'colaborate';
-  src: url('fonts/colab/ColabThi-webfont.eot');
-  src: url('fonts/colab/ColabThi-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/colab/ColabThi-webfont.woff') format('woff'),
-       url('fonts/colab/ColabThi-webfont.ttf') format('truetype'),
-       url('fonts/colab/ColabThi-webfont.svg#colaborate-thinregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family:"colaborate";
+  src:url("fonts/colab/ColabThi.eot?") format("eot"),
+      url("fonts/colab/ColabThi.woff") format("woff"),
+      url("fonts/colab/ColabThi.ttf") format("truetype"),
+      url("fonts/colab/ColabThi.svg#Colaborate-Thin") format("svg");
+  font-weight:normal;
+  font-style:normal;
 }
+
 
 /*  FONT AWESOME
 ------------------------------------------------------------------------------*/
