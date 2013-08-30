@@ -19,7 +19,7 @@ hippoartists.com © Hippo, LLC.
   <title><%= full_title(yield(:title)) %></title>
   
   <%= javascript_include_tag "//use.typekit.net/onq5dze.js" %>
-  <script>try{Typekit.load();}</script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
   <%= stylesheet_link_tag    "application", media: "all", 
   "data-turbolinks-track" => true %>
