@@ -93,7 +93,7 @@ table.avp td:last-child {
 .about {
   color: rgba(1,1,1,.8);
   margin: 0 9px 25px 0px;
-  font: 18px 'Lato';
+  font: 18px 'Lato'; font-weight: 300;
   line-height: 1.7em;
 }
 .comments {

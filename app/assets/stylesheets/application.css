@@ -299,9 +299,9 @@ h1#artist-title i {
   position: relative; left: -5px; bottom: 1px; font-size: 10px;
 }
 h1#artist-title {
-  z-index: 2; width:100%; padding: 26px 0px 26px 0; 
+  z-index: 2; width:100%; padding: 22px 0px 22px 0; 
   position: fixed; top: 34px; letter-spacing: 1px;
-  font: 23px 'colaborate'; 
+  font: 23px 'Source Sans Pro'; font-weight: 200; 
   background: url(main/main/background-texture.jpg);
 }
 h1#artist-title span {
@@ -360,7 +360,7 @@ h1#artist-title span {
   h1#artist-title span .notchmlb {
     position: absolute;
     top: 2.63em; 
-    left: 147px;
+    left: 146px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;

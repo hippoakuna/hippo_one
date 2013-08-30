@@ -17,13 +17,10 @@ hippoartists.com © Hippo, LLC.
 
 <head>
   <title><%= full_title(yield(:title)) %></title>
-  
-  <%= javascript_include_tag "//use.typekit.net/onq5dze.js" %>
-  <script>try{Typekit.load();}catch(e){}</script>
-
   <%= stylesheet_link_tag    "application", media: "all", 
   "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:300,900' %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:300,400,900' %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' %>
   <%= javascript_include_tag "application", 
   "data-turbolinks-track" => true %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" %>
