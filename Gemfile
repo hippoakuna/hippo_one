@@ -23,4 +23,3 @@ group :production do
 end
 
 gem 'rails_12factor', '0.0.2'
-gem 'font-awesome-rails', '3.2.1.3'
