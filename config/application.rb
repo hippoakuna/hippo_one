@@ -32,14 +32,14 @@ module HippoOne
     config.assets.precompile += %w( fontawesome-webfont.svg )
     config.assets.precompile += %w( fontawesome-webfont.ttf )
     config.assets.precompile += %w( fontawesome-webfont.woff )
-    config.assets.precompile += %w( ColabThi.eot )
-    config.assets.precompile += %w( ColabThi.svg )
-    config.assets.precompile += %w( ColabThi.ttf )
-    config.assets.precompile += %w( ColabThi.woff ) 
     config.assets.precompile += %w( LANENAR_-webfont.eot )
     config.assets.precompile += %w( LANENAR_-webfont.svg )
     config.assets.precompile += %w( LANENAR_-webfont.ttf )
     config.assets.precompile += %w( LANENAR_-webfont.woff )
-    config.assets.precompile = ['*.js', '*.css', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.ttf', '*.svg', '*.eot', '*.woff', '*.m4a']   
+    config.assets.precompile = ['*.js', '*.css', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.m4a']
+    config.assets.precompile += %w( ColabThi-webfont.eot )
+    config.assets.precompile += %w( ColabThi-webfont.svg )
+    config.assets.precompile += %w( ColabThi-webfont.ttf )
+    config.assets.precompile += %w( ColabThi-webfont.woff )        
   end
 end
