@@ -1,11 +1,7 @@
 HippoOne::Application.routes.draw do
   root "global_pages#home"
-
-  #match '/legal', to: 'global_pages#legal', via: 'get'
   
   match '/akuna', 	   to: 'akuna#akuna', 	   via: 'get'
-  match '/akunaaudio', to: 'akuna#akunaaudio', via: 'get'
-  match '/akunavideo', to: 'akuna#akunavideo', via: 'get'
   match '/akunaphoto', to: 'akuna#akunaphoto', via: 'get'
   match '/akunatext',  to: 'akuna#akunatext',  via: 'get'
 

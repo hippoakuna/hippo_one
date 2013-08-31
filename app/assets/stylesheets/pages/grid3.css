@@ -5,7 +5,7 @@
 img#content-background {
   position: fixed; z-index: -9999;
   margin-left: -18px; width: 910px;
-  top:-36px;
+  top:-36px; bottom: 0;
 }
 
 /* Pods

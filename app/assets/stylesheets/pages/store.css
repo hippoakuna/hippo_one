@@ -197,7 +197,11 @@ img.act:hover {
   opacity: 1;
 }  
 
-
+.my-list li .mask span { 
+  font-size: 14px; 
+  font-weight:bold;
+  margin-left:5px;
+}
 .my-list li .mask {
   text-align: center;
    width: 206px; 
@@ -219,6 +223,7 @@ img.act:hover {
    -moz-box-shadow: 0 0 1px rgba(100,100,100,.5);
    box-shadow: 0 0 1px rgba(100,100,100,.5);
    border-radius:5px;
+   font-size: 14px;
 }
 .my-list li a.info:hover {
    background: rgba(255,255,255,.8);
