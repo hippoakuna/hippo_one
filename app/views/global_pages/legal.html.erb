@@ -1,2 +1,88 @@
-<h1>Legal</h1>
-<p>Coming Soon</p>
+<% provide(:title, 'Legal') %>
+<%= stylesheet_link_tag 'pages/welcome' %>
+<%= stylesheet_link_tag 'js/lightview/lightview' %>
+<%= stylesheet_link_tag 'js/lightview/demo_inline' %>
+<%= javascript_include_tag "slidesjs/jquery.slides.min" %>
+
+
+<!-- SlidesJS  -->
+<script>
+  $(function() {
+    $('#slides').slidesjs({
+      width: 960,
+      height: 541,        
+      navigation: false
+    });
+  });
+</script>  
+
+
+<!-- 
+.....................................................................
+-->
+
+<h2 id="artist-title"><%= image_tag "main/main/top-line.png", class: "headshad" %></h2>
+
+<!-- Main Features
+.....................................................................
+-->
+
+<div id="feature">
+<div id="slides">
+
+<section>
+  <%= link_to image_tag("main/banners/mlb1.jpg"), melikebees_path %><p><strong>Me Like Bees</strong><br><span>musician</span></p>
+</section>
+
+<section>
+  <%= link_to image_tag("main/banners/aabnrblk2-2.png"), akuna_path %><p><strong>Akuna</strong><br><span>musician</span><span style="margin-left: 10px;">designer</span></p>
+</section>
+
+<section>
+  <iframe src="//www.youtube.com/embed/hKpNpvJ7n2o?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-caret-left"></i></a>
+<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-caret-right"></i></a>
+
+</div>
+</div><div class='clear'>&nbsp;</div>
+
+
+<!-- Sub Features
+.....................................................................
+-->
+
+<section id="content">
+
+  <section id="box3" class="grid_7">
+    <div class="form-5" style="margin-top:65px;"> 
+      <form action="http://hippoartists.us7.list-manage1.com/subscribe/post?u=0d553d842dc3008a93c8478fe&amp;id=d7c6bb4c98" method="post" class="validate" target="_blank" novalidate>
+        <p>
+          <input type="text" placeholder="first name" name="FNAME">
+          <input type="email" placeholder="email address", name="EMAIL">
+        </p>  
+        <button class="welc-in" type="submit" value="Subscribe" name="subscribe">Get Updates</button> 
+      </form>​​​​
+    </div>
+  </section>
+
+  <section id="box2" class="grid_7">
+    <%= image_tag "main/banners/dot3.jpg", class: "videoplace" %>  
+    <a href='#demo_inline_element' class='lightview'
+      data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
+      <img src="/assets/main/etc/play2.png" onmouseover="this.src='/assets/main/etc/play3.png'" onmouseout="this.src='/assets/main/etc/play2.png'" class="playbutton linkaway" style="width:70px;height:70px;"/>
+    </a>  
+    <div id='demo_inline_element' style='display:none'>
+      <div class='movie-container side'>
+        <iframe src="http://player.vimeo.com/video/70729293" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+<footer>
+  &copy; 2013 Hippo, LLC. All rights reserved. 
+</footer>

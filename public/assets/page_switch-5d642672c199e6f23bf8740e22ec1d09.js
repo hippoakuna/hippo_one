@@ -1,1 +1,0 @@
-var newHash="",$mainContent=$(".clearfix");$("lg-icons").delegate("a","click",function(){return window.location.hash=$(this).attr("href"),!1}),$(window).bind("hashchange",function(){newHash=window.location.hash.substr(1),$mainContent.load(newHash+" .clearfix > *")});

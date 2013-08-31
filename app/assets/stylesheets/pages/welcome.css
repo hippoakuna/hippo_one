@@ -20,48 +20,91 @@
   -webkit-box-shadow: 0px 0px 5px 0px #ccc;
   -moz-box-shadow:    0px 0px 5px 0px #ccc;
   box-shadow:         0px 0px 5px 0px #ccc;
+  max-height: 541px;
 }
-#slides { padding-bottom: 12px; } 
 footer {
   width: 220px; height: 50px; 
   color: #aaa; font-size: 10px;
   position: relative; bottom: 0; left: 400px;
 }
+h2#artist-title {
+  z-index: 9998; width:100%; padding: 26px 0px 26px 0;
+  position: fixed; top: 31px;
+}
 
-/* Feature
+/* SlidesJS
 -------------------------------------------------------------------------------------*/
 
-h2#artist-title {
-  z-index: 1; width:100%; padding: 26px 0px 26px 0;
-  position: fixed; top: 31px;
-  font: 22px 'lane_-_narrow'; text-transform: uppercase;
+    #slides { display: none; }
+
+    .slidesjs-pagination {
+      margin: 0;
+      list-style: none; text-align: center;
+      position: relative; left: -21px; bottom: 0px;
+      white-space: nowrap;   
+    }
+    .slidesjs-pagination li { display: inline-block; }
+    .slidesjs-pagination li a {
+      display: block;
+      width: 10px; height: 10px;
+      background: #999;
+      border: 0px solid rgb(255,255,255);
+      margin: 0 12px 0 12px; 
+      border-radius: 50%;
+      cursor: pointer;
+      color: rgba(0,0,0,.0);
+    }
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background: #333;
+      -webkit-transition: box-shadow 0.2s ease-in-out;
+      -moz-transition: box-shadow 0.2s ease-in-out;
+      transition: box-shadow 0.2s ease-in-out;
+    }
+    .slidesjs-pagination li a:hover {
+      background: #777;
+    }
+
+#slides .slidesjs-navigation {z-index: 9996;}
+#slides .slidesjs-next { float:right;}
+#slides .slidesjs-previous, #slides .slidesjs-next {
+  color: rgba(0,0,0,.0); font-size: 30px;
+  text-shadow: none;
 }
-#cbp-fwslider iframe,
-#cbp-fwslider img {
+
+/*
+-------------------------------------------------------------------------------------*/
+
+#slides iframe,
+#slides img {
   width: 100%;
-  margin-bottom: -113px; /*-175*//*-122 b200 b110 b190*//*-175 b100 b170 b100*/
+  margin-bottom: -115px;
+  height: 519px;
 }
-#cbp-fwslider iframe {
-  height: 517px; 
+#slides iframe { 
   border: 0;
 }
-#cbp-fwslider li p {
+#slides p {
   width: 300px;
   color: #fff; text-shadow: 2px 2px 6px #555;
   font: 30px normal "Lato";
-  position:relative; bottom:50px; /*100*/ padding-left:50px; 
+  position:relative; bottom:50px; padding-left:50px; 
 }
-#cbp-fwslider li p img.featart,
-#cbp-fwslider li p img.featproj {
-  margin-left: -8px;
-  position:relative; bottom: 170px;
-}
-#cbp-fwslider li p img.featart {
-  width: 120px;
-}
-#cbp-fwslider li p img.featproj {
-  width: 130px; 
-  margin-left: -4px;
+#slides span,
+.cbp-fwslider li span {
+  letter-spacing: normal;
+  text-transform: uppercase;
+  vertical-align: 30%;
+  padding: 5px; 
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font: bold 10px 'Helvetica Neue';  
+  background: #fff; color: #333;
+  text-shadow: none;
+  -webkit-box-shadow: 2px 2px 6px #555;
+  -moz-box-shadow: 2px 2px 6px #555;
+  box-shadow: 2px 2px 6px #555;
 }
 
 /* Boxes
@@ -94,29 +137,6 @@ h2#artist-title {
   width: 92.5%;
   height: 254px;
 }
-
-/* SlidesJS
--------------------------------------------------------------------------------------*/
-
-#slides { display: none; margin-bottom:-28px; }
-#slides .slidesjs-navigation { margin-top:0; }
-#slides .slidesjs-previous {
-  margin-right: 5px;
-  position: relative; left: 3px; /* 462 */
-}
-#slides .slidesjs-next {
-  margin-right: 5px;
-  position: relative; left: 912px;
-}
-.slidesjs-pagination {
-  display: none;
-}
-#slides a:link,
-#slides a:visited { color: #333; }
-#slides a:hover,
-#slides a:active { color: #1794B3; text-decoration: none; }
-.navbar { overflow: hidden; }
-
 
 /* Buttons
 -------------------------------------------------------------------------------------*/
@@ -157,8 +177,6 @@ h2#artist-title {
   background: white;
   cursor: pointer;
 }
-
-
 
 /* Signin Button
 -------------------------------------------------------------------------------------*/
@@ -253,23 +271,23 @@ h2#artist-title {
 .form-5 input::-webkit-input-placeholder {
     color: #666;
     text-shadow: 0 -1px 1px rgba(255,255,255,0.4);
-    font-family: 'Lato';
+    font-family: 'Lato'; font-weight: 300;
 }
 
 .form-5 input:-moz-placeholder {
     color: #666;
     text-shadow: 0 -1px 1px rgba(255,255,255,0.4);
-    font-family: 'Lato';
+    font-family: 'Lato'; font-weight: 300;
 }
 
 .form-5 input:-ms-input-placeholder {
     color: #666;
     text-shadow: 0 -1px 1px rgba(255,255,255,0.4);
-    font-family: 'Lato';
+    font-family: 'Lato'; font-weight: 300;
 }
 
 
-/* Sign-up Form | Other
+/* Sign-up Form
 -------------------------------------------------------------------------------------*/
 
 .form-5 *,
@@ -291,8 +309,8 @@ form.clearfix:after {
 }
 
 
-
-
+/* Other
+-------------------------------------------------------------------------------------*/
 
 .playbutton {
   border: 0; display: inline-block;
@@ -302,3 +320,4 @@ form.clearfix:after {
 .playbutton:hover {
    background: url('main/etc/play3.png') no-repeat 0 20px;
 }
+

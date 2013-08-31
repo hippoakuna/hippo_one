@@ -49,16 +49,25 @@
 			this.support = Modernizr.csstransitions && Modernizr.csstransforms;
 			this.support3d = Modernizr.csstransforms3d;
 			// transition end event name and transform name
-			var transProperties = {
-				'WebkitTransition' : { transitionEndEvent : 'webkitTransitionEnd', tranformName : '-webkit-transform' },
-				'MozTransition' : { transitionEndEvent : 'transitionend', tranformName : '-moz-transform' },
-				'OTransition' : { transitionEndEvent : 'oTransitionEnd', tranformName : '-o-transform' },
-				'msTransition' : { transitionEndEvent : 'MSTransitionEnd', tranformName : '-ms-transform' },
-				'transition' : { transitionEndEvent : 'transitionend', tranformName : 'transform' }
-			};
+			// transition end event name
+			var transEndEventNames = {
+					'WebkitTransition' : 'webkitTransitionEnd',
+					'MozTransition' : 'transitionend',
+					'OTransition' : 'oTransitionEnd',
+					'msTransition' : 'MSTransitionEnd',
+					'transition' : 'transitionend'
+				},
+				transformNames = {
+					'WebkitTransform' : '-webkit-transform',
+					'MozTransform' : '-moz-transform',
+					'OTransform' : '-o-transform',
+					'msTransform' : '-ms-transform',
+					'transform' : 'transform'
+				};
+
 			if( this.support ) {
-				this.transEndEventName = transProperties[ Modernizr.prefixed( 'transition' ) ].transitionEndEvent + '.cbpFWSlider';
-				this.transformName = transProperties[ Modernizr.prefixed( 'transition' ) ].tranformName;
+				this.transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ] + '.cbpFWSlider';
+				this.transformName = transformNames[ Modernizr.prefixed( 'transform' ) ];
 			}
 			// current and old item´s index
 			this.current = 0;
