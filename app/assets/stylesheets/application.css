@@ -320,7 +320,7 @@ h1#artist-title span {
   h1#artist-title span .notch {
     position: absolute;
     top: 2.63em; 
-    left: 76px;
+    left: 75px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;
@@ -330,7 +330,7 @@ h1#artist-title span {
   h1#artist-title span .notches {
     position: absolute;
     top: 2.63em; 
-    left: 173px;
+    left: 172px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;

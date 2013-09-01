@@ -135,7 +135,7 @@ img#content-background {
 -------------------------------------------------------------------------------------*/
 
 .merch-2 {
-   margin-left: 18px;
+   position:absolute; top: 0; right: 0;
 }
 .merch-2,
 .merch {
@@ -143,8 +143,6 @@ img#content-background {
   height: 625px;  
    margin-bottom: 18px;
    overflow: hidden;
-   position: relative;
-   float: left; 
    text-align: center;
    -webkit-box-shadow: 0px 1px 6px 0px #ccc;
    -moz-box-shadow:    0px 1px 6px 0px #ccc;
