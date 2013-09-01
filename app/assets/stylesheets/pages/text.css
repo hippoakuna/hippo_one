@@ -80,7 +80,7 @@ p.second a:hover {color:#1794B3;}
 -------------------------------------------------------------------------------------*/
 
 .feeditem { margin-left: -8px; }
-.feeditem h1 { font-family: 'Source Sans Pro'; font-weight: 400; }
+.feeditem h1 { font-family: 'Lato'; font-weight: 400; }
 .ball {
   min-height: 200px; width: 260px; /* 264 */
   background: rgb(255,255,255);

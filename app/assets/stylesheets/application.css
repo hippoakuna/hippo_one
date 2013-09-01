@@ -300,8 +300,8 @@ h1#artist-title i {
 }
 h1#artist-title {
   z-index: 2; width:100%; padding: 22px 0px 22px 0; 
-  position: fixed; top: 34px; letter-spacing: 1px;
-  font: 23px 'Source Sans Pro'; font-weight: 200; 
+  position: fixed; top: 34px; letter-spacing: 0px;
+  font: 23px 'Lato'; font-weight: 300; 
   background: url(main/main/background-texture.jpg);
 }
 h1#artist-title span {
@@ -316,21 +316,11 @@ h1#artist-title span {
   font: bold 11px 'Helvetica Neue';
   color: rgba(255,255,255,.9);
 }
-  h1#artist-title span .notch2 {
-    position: absolute;
-    top: 2.63em; 
-    left: 145px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 10px solid #c9c9c9;
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;  
-  }
 
   h1#artist-title span .notch {
     position: absolute;
     top: 2.63em; 
-    left: 78px;
+    left: 76px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;
@@ -340,17 +330,7 @@ h1#artist-title span {
   h1#artist-title span .notches {
     position: absolute;
     top: 2.63em; 
-    left: 175px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 10px solid #c9c9c9;
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
-  }
-  h1#artist-title span .notched {
-    position: absolute;
-    top: 2.63em; 
-    left: 285px; 
+    left: 173px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;
@@ -360,18 +340,13 @@ h1#artist-title span {
   h1#artist-title span .notchmlb {
     position: absolute;
     top: 2.63em; 
-    left: 146px;
+    left: 144px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 10px solid #c9c9c9;
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
   }
-
-h1#artist-title a:link {color: rgba(1,1,1,1); text-decoration: none;}  
-h1#artist-title a:visited {color: rgba(1,1,1,1); text-decoration: none;} 
-h1#artist-title a:hover {color: #1794B3; text-decoration: none;}     
-h1#artist-title a:active {color: rgba(1,1,1,1); text-decoration: none;} 
 
 /* Wookmark Plugin
 -------------------------------------------------------------------------------------*/
