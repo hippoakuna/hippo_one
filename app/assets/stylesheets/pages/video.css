@@ -33,12 +33,8 @@ img#content-background {
   height: 480px; width: 100%; 
     background: #d0d0d0;
 }
-ul.my-list li p,
-#content .avatar p {
-  color: #666;
-  font: 12px 'Helvetica Neue', 'Lato', Helvetica;
-  margin: -3px 0 34px 0; padding: 12px;
-
+#content .avatar p,
+ul.my-list li p {
   background: rgb(255,255,255);
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
@@ -47,8 +43,6 @@ ul.my-list li p,
   background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-
-
   -webkit-border-bottom-left-radius: 3px;
   -moz-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -58,6 +52,16 @@ ul.my-list li p,
   -webkit-box-shadow: 0px 1px 3px 0px #ccc;
   -moz-box-shadow:    0px 1px 3px 0px #ccc;
   box-shadow:         0px 1px 3px 0px #ccc;
+}
+ul.my-list li p {
+  color: #666;
+  font: 12px 'Helvetica Neue', 'Lato', Helvetica;
+  margin: -10px 0 34px 0; padding: 12px;
+}
+#content .avatar p {
+  color: #666;
+  font: 12px 'Helvetica Neue', 'Lato', Helvetica;
+  margin: -3px 0 34px 0; padding: 12px;
 }
 #content h4 {
   text-transform: uppercase;

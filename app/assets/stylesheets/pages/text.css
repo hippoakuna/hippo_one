@@ -110,3 +110,26 @@ p.second a:hover {color:#1794B3;}
 .grid_7 img.vid {
   height: 286px;
 }
+
+
+
+/* Grid Filter
+-------------------------------------------------------------------------------------*/
+
+#Grid{
+  text-align: justify;
+}
+#Grid:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+#Grid .mix{
+  display: none;
+  opacity: 0;
+  vertical-align: top;
+}
+#Grid .gap{
+  display: inline-block;
+}
+
