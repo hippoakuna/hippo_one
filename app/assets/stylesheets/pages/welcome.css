@@ -23,13 +23,9 @@
   max-height: 541px;
 }
 footer {
-  width: 220px; height: 50px; 
+  width: 220px; height: 20px; margin: 0; padding: 0; 
   color: #aaa; font-size: 10px;
   position: relative; bottom: 0; left: 400px;
-}
-h2#artist-title {
-  z-index: 9998; width:100%; padding: 26px 0px 26px 0;
-  position: fixed; top: 31px;
 }
 
 /* SlidesJS
@@ -314,10 +310,10 @@ form.clearfix:after {
 
 .playbutton {
   border: 0; display: inline-block;
-  background: url('http://hippoartists.com.s3.amazonaws.com/images/main/etc/play2.png') no-repeat 0 0px;
   position:relative; top:-180px; left:196px;
 }
-.playbutton:hover {
-   background: url('http://hippoartists.com.s3.amazonaws.com/images/main/etc/play3.png') no-repeat 0 20px;
-}
 
+h2#artist-title {
+  z-index: 9998; width:100%; padding: 26px 0px 26px 0;
+  position: fixed; top: 31px;
+}
