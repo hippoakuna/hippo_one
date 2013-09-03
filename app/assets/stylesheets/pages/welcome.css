@@ -314,10 +314,10 @@ form.clearfix:after {
 
 .playbutton {
   border: 0; display: inline-block;
-  background: url('main/etc/play2.png') no-repeat 0 0px;
+  background: url('http://hippoartists.com.s3.amazonaws.com/images/main/etc/play2.png') no-repeat 0 0px;
   position:relative; top:-180px; left:196px;
 }
 .playbutton:hover {
-   background: url('main/etc/play3.png') no-repeat 0 20px;
+   background: url('http://hippoartists.com.s3.amazonaws.com/images/main/etc/play3.png') no-repeat 0 20px;
 }
 

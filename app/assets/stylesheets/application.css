@@ -13,7 +13,7 @@
 body { 
   margin:0; padding:0; 
   font: normal 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;  
-  background: url(main/main/background-texture.jpg) top repeat;
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/background-texture.jpg) top repeat;
 }
 #header {
   background: rgb(247,247,247);
@@ -236,7 +236,7 @@ button a:link, button a:visited, button a:hover, button a:active {
 -------------------------------------------------------------------------------------*/
 
 #left-sidebar {
-  background: url(main/main/Linen-iPhone-2.png) top repeat;
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/Linen-iPhone-2.png) top repeat;
   margin: 0; padding: 0; margin-top: 0em;
   position: fixed; 
   width: 4.4em;
@@ -302,7 +302,7 @@ h1#artist-title {
   z-index: 2; width:100%; padding: 22px 0px 22px 0; 
   position: fixed; top: 34px; letter-spacing: 0px;
   font: 23px 'Lato'; font-weight: 300; 
-  background: url(main/main/background-texture.jpg);
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/background-texture.jpg);
 }
 h1#artist-title span {
   letter-spacing: normal;
