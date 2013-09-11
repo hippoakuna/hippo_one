@@ -7,13 +7,13 @@ img#content-background {
   margin-left: -18px; width: 910px;
   top:-36px; bottom: 0;
 }
-@media handheld, only screen and (max-width: 768px) {
+/*@media handheld, only screen and (max-width: 768px) {
   img#content-background {
     position: absolute; z-index: -9999;
     margin-left: -18px; width: 910px;
     top:-36px; bottom: 0;
   }
-}
+}*/
 /* Pods
 -------------------------------------------------------------------------------------*/
 
