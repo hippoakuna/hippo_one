@@ -23,10 +23,15 @@
   max-height: 541px;
 }
 footer {
+  display: none;
   width: 220px; height: 20px; margin: 0; padding: 0; 
   color: #aaa; font-size: 10px;
-  position: relative; bottom: 0; left: 400px;
+  position: relative; bottom: 0; left: 390px;
 }
+footer i { margin-left: 3px; }
+footer a:link { color:#aaa; }
+footer a:visited { color:#aaa; }
+footer a:hover { color:#1794B3; }
 
 /* SlidesJS
 -------------------------------------------------------------------------------------*/
