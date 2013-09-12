@@ -23,16 +23,21 @@
   max-height: 541px;
 }
 footer {
-  display: none;
-  width: 220px; height: 20px; margin: 0; padding: 0; 
-  color: #aaa; font-size: 10px;
-  position: relative; bottom: 0; left: 390px;
+  background: rgba(255,255,255,.7);
+  width: 820px; margin: 0; padding: 0; 
+  color: #666; font-size: 11px; 
+  position: relative; 
+  margin: -19px 0 0 18px; 
+  padding: 3px 0 1px 2px; 
+  box-shadow: 0px -3px 5px -3px #ccc;
 }
-footer i { margin-left: 3px; }
-footer a:link { color:#aaa; }
-footer a:visited { color:#aaa; }
-footer a:hover { color:#1794B3; }
+footer a:link {color: #0084b4; text-decoration: underline;} 
 
+/*section#location {
+  position: absolute;
+  left: 0; top: -480px;
+  width: 100%;
+}*/
 section#location iframe{
   padding: 18px; padding-bottom: 0; 
   -webkit-border-top-right-radius: 5px; 
@@ -52,8 +57,8 @@ section#location iframe{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 
   margin-top: 10px;
-  width: 924px;
-  height: 150px;
+  width: 924px; /* 924 alt 100% */
+  height: 150px; 
 }
 
 /* SlidesJS
