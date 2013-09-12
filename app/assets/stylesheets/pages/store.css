@@ -7,6 +7,9 @@ img#content-background {
   margin-left: -18px; width: 910px;
   top:-36px;
 }
+#content a:link {color:#666;}
+#content a:visited {color:#666;}
+#content a:hover {color:#666;}
 
 /* Pods
 -------------------------------------------------------------------------------------*/
@@ -47,10 +50,6 @@ img#content-background {
   .my-list li img {
     width: 206px; 
     height: 309px;
-    background: #d0d0d0;
-    -webkit-box-shadow: 1px 1px 5px 1px #c0c0c0;
-    -moz-box-shadow: 1px 1px 5px 1px #c0c0c0;
-    box-shadow: 1px 1px 5px 1px #c0c0c0;  
   }
   .my-list li {
     margin-right: 10px;
@@ -87,11 +86,6 @@ img#content-background {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
-   /*-webkit-transform: translateY(100px);
-   -moz-transform: translateY(100px);
-   -o-transform: translateY(100px);
-   -ms-transform: translateY(100px);
-   transform: translateY(100px);*/
    -webkit-transition: all 0.3s ease-in-out 0.1s;
    -moz-transition: all 0.3s ease-in-out 0.1s;
    -o-transition: all 0.3s ease-in-out 0.1s;
@@ -153,7 +147,7 @@ img#content-background {
 .merch-2 .mask,.merch-2 .content,
 .merch .mask,.merch .content {
   width: 417px; 
-  height: 625px; 
+  height: 80px; 
    position: absolute;
    overflow: hidden;
    top: 0;
@@ -170,22 +164,12 @@ img#content-background {
 .merch a.info {
    display: inline-block;
    text-decoration: none;
-   margin-top: 309px;
-   padding: 5px;
-   background: rgba(255,255,255,.8);
-   color: #444;
-   text-transform: uppercase;
-   -webkit-box-shadow: 0 0 1px rgba(100,100,100,.5);
-   -moz-box-shadow: 0 0 1px rgba(100,100,100,.5);
-   box-shadow: 0 0 1px rgba(100,100,100,.5);
-   border-radius:5px;
+   margin-top: 15px; margin-left: 350px;
+   opacity: .8;
 }
 .merch-2 a.info:hover,
 .merch a.info:hover {
-  background: rgba(255,255,255,1);
-   -webkit-box-shadow: 0 0 5px #666;
-   -moz-box-shadow: 0 0 5px #666;
-   box-shadow: 0 0 5px #666;
+  opacity: 1;
 }
 img.act {
   width: 25px; height: 25px;
@@ -203,7 +187,7 @@ img.act:hover {
 .my-list li .mask {
   text-align: center;
    width: 206px; 
-   height: 309px;
+   height: 70px;
    position: absolute;
    overflow: hidden;
    top: 0;
@@ -212,19 +196,24 @@ img.act:hover {
 .my-list li .mask a.info {
    display: inline-block;
    text-decoration: none;
-   margin-top: 143px;
-   padding: 5px;
+   margin-top: 10px; margin-left: 160px;
+   /*padding: 5px; padding-bottom: 2px;
    background: rgba(255,255,255,.5);
    color: #444;
    -webkit-box-shadow: 0 0 1px rgba(100,100,100,.5);
    -moz-box-shadow: 0 0 1px rgba(100,100,100,.5);
    box-shadow: 0 0 1px rgba(100,100,100,.5);
-   border-radius:5px;
+   border-radius:5px;*/
    font-size: 14px;
 }
-.my-list li a.info:hover {
-   background: rgba(255,255,255,.8);
-}
 .my-list li .mask img {
-  width: 16px; height: 16px;
+  width: 26px; height: 26px;
 }  
+
+
+.my-list small.price {
+  margin-left:160px;
+  color:#666;
+}
+
+

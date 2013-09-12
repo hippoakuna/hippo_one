@@ -1,7 +1,5 @@
 <% provide(:title) %>
 <%= stylesheet_link_tag 'pages/welcome' %>
-<%= stylesheet_link_tag 'js/lightview/lightview' %>
-<%= stylesheet_link_tag 'js/lightview/demo_inline' %>
 <%= javascript_include_tag "slidesjs/jquery.slides.min" %>
 
 
@@ -11,7 +9,13 @@
     $('#slides').slidesjs({
       width: 960,
       height: 541,        
-      navigation: false
+      navigation: false,
+      play: {
+        active: true,
+        auto: true,
+        interval: 4000,
+        swap: true
+      }
     });
   });
 </script>  
@@ -82,6 +86,9 @@
 
 </section>
 
+<section id="location">
+  <iframe frameBorder='0' src='http://a.tiles.mapbox.com/v3/kalaniakuna.map-tu9a7lx7.html#13/37.084351498663175/-94.51357841491699'></iframe>
+</section>  
 
 <footer>
   &copy; 2013 Hippo, LLC. All rights reserved.

@@ -445,7 +445,7 @@ if (!$.fn.offset) {
 $.fn.hoverscroll.params = {
 	vertical:	false,      // Display the list vertically or not
 	width:		853,        // Width of the list
-	height:		198,         // Height of the list
+	height:		155,         // Height of the list 198
 	arrows:		true,       // Display arrows to the left and top or the top and bottom
 	arrowsOpacity:	0.5,    // Maximum opacity of the arrows if fixedArrows
     fixedArrows: false,     // Fix the displayed arrows to the side of the list

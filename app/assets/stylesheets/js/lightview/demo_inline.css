@@ -1,4 +1,16 @@
 
+#demo_inline_element_square {
+  float: left;
+  position: relative;
+  width: 450px;
+  background: #141414;
+  color: #fefefe;
+}
+#demo_inline_element_square .container {
+  width: 100%; height: 520px;
+  overflow: hidden;
+  background: #fff;
+}
 
 #demo_inline_element_two {
   float: left;
