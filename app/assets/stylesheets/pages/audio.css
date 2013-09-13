@@ -5,8 +5,8 @@
 }
 img#content-background {
   position: fixed; z-index: -9999;
-  margin-left: -18px; width: 910px;
-  top:-36px;
+  margin-left: -18px; width: 906px;
+  top:106px; bottom: 0;
 }
 
 
@@ -101,7 +101,7 @@ li.playing:before { content: url('audiojs/play-butt.png'); position: absolute; l
 -------------------------------------------------------------------------------------*/
 
 .view {
-   margin-top:3px; 
+   margin-top:1px;  margin-left: -2px;
    width: 397px;
    padding: 10px;
    overflow: hidden;
@@ -120,9 +120,13 @@ li.playing:before { content: url('audiojs/play-butt.png'); position: absolute; l
    -webkit-border-radius: 4px;
    -moz-border-radius: 4px;
    border-radius: 4px;
-   -webkit-box-shadow: 0px 1px 6px 0px #ccc;
+   /*-webkit-box-shadow: 0px 1px 6px 0px #ccc;
    -moz-box-shadow:    0px 1px 6px 0px #ccc;
-   box-shadow:         0px 1px 6px 0px #ccc;
+   box-shadow:         0px 1px 6px 0px #ccc;*/
+   -webkit-box-shadow: 0px 1px 3px 0px rgba(150,150,150,.3);
+   -moz-box-shadow:    0px 1px 3px 0px rgba(150,150,150,.3);
+   box-shadow:         0px 1px 3px 0px rgba(150,150,150,.3);
+   border: 1px solid rgba(150,150,150,.2);
 }
 .view p {
   text-align: left;

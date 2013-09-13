@@ -4,8 +4,8 @@
 }
 img#content-background {
   position: fixed; z-index: -9999;
-  margin-left: -18px; width: 910px;
-  top:-36px;
+  margin-left: -18px; width: 906px;
+  top:106px; bottom: 0;
 }
 
 /* Pods
@@ -28,16 +28,21 @@ img#content-background {
 -------------------------------------------------------------------------------------*/
 
 p.second {
-  margin: 0; margin-left: 492px; padding: 12px;
+  margin: 0 0 0 492px; padding: 12px;
   position: fixed; 
   color: #666; width: 336px;
   font: 12px 'Helvetica Neue', 'Lato', Helvetica; 
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 1px 3px 0px #ccc;
+  
+  /*-webkit-box-shadow: 0px 1px 3px 0px #ccc;
   -moz-box-shadow:    0px 1px 3px 0px #ccc;
-  box-shadow:         0px 1px 3px 0px #ccc;
+  box-shadow:         0px 1px 3px 0px #ccc;*/
+  -webkit-box-shadow: 0px 0px 3px 0px #ccc;
+  -moz-box-shadow:    0px 0px 3px 0px #ccc;
+  box-shadow:         0px 0px 3px 0px #ccc; 
+
   background: rgb(255,255,255);
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
@@ -100,9 +105,9 @@ p.second a:hover {color:#1794B3;}
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 1px 3px 0px #ccc;
-  -moz-box-shadow:    0px 1px 3px 0px #ccc;
-  box-shadow:         0px 1px 3px 0px #ccc;  
+  -webkit-box-shadow: 0px 0px 4px 0px #ccc;
+  -moz-box-shadow:    0px 0px 4px 0px #ccc;
+  box-shadow:         0px 0px 4px 0px #ccc;  
 }
 .grid_7 img.feat {
   width: 100%; 
@@ -117,6 +122,7 @@ p.second a:hover {color:#1794B3;}
 -------------------------------------------------------------------------------------*/
 
 #Grid{
+  margin-top: 2px;
   text-align: justify;
 }
 #Grid:after{

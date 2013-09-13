@@ -4,8 +4,8 @@
 }
 img#content-background {
   position: fixed; z-index: -9999;
-  margin-left: -18px; width: 910px;
-  top:-36px;
+  margin-left: -18px; width: 906px;
+  top:106px; bottom: 0;
 }
 
 /* Pods

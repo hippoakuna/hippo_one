@@ -5,8 +5,8 @@
 }
 img#content-background {
   position: fixed; z-index: -9999;
-  margin-left: -18px; width: 910px;
-  top:-36px;
+  margin-left: -18px; width: 906px;
+  top:106px; bottom: 0;
 }
 
 /* Pods
@@ -60,7 +60,7 @@ div.clear {
   z-index: 1;
   list-style-type: none;
   position: relative; /** Needed to ensure items are laid out relative to this container **/
-  margin: 0; margin-top: 3px;
+  margin: 0; margin-top: 1px; margin-left: -2px;
 }
 
 #tiles li {
@@ -79,9 +79,10 @@ div.clear {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 6px 0px #ccc;
-  -moz-box-shadow:    0px 1px 6px 0px #ccc;
-  box-shadow:         0px 1px 6px 0px #ccc;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(150,150,150,.3);
+  -moz-box-shadow:    0px 1px 1px 0px rgba(150,150,150,.3);
+  box-shadow:         0px 1px 1px 0px rgba(150,150,150,.3);
+  border: 1px solid rgba(150,150,150,.2);
 }
 #tiles li img {
   display: block;

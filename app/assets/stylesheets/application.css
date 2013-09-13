@@ -13,7 +13,7 @@
 body { 
   margin:0; padding:0; 
   font: normal 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;  
-  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/background-texture.jpg) top repeat;
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg) top repeat;
 }
 #header {
   background: rgb(247,247,247);
@@ -24,7 +24,7 @@ body {
   background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
   background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 );
-  border-bottom: 1px solid rgba(150,150,150,.1);
+  border-bottom: 1px solid rgba(150,150,150,.25);
   
   position:fixed;
   top: 0; left: 0;
@@ -95,7 +95,7 @@ img.headshad {
 }
 img.topfloat {
   width: 899px; 
-  position: absolute; top: 70px; left: 70px; /* top 71 */
+  position: absolute; top: 72px; left: 70px; /* top 70 */
 }
 
 /* #Header #Right
@@ -105,7 +105,7 @@ img.topfloat {
 #right a:hover { opacity: 1; }
 #right li {
   float: right;
-  margin: -33px -5px 0;
+  margin: -33px -2px 0;
 }
 
 /* #Header #Right Search
@@ -297,56 +297,118 @@ div.clear {
 
 h1#artist-title i {
   position: relative; left: -5px; bottom: 1px; font-size: 10px;
+    text-shadow:
+    0px 0px 0px rgba(000,000,000,0),
+    0px -2px 0px rgba(135,135,135,.1);
 }
 h1#artist-title {
   z-index: 2; width:100%; padding: 22px 0px 22px 0; 
   position: fixed; top: 34px; letter-spacing: 0px;
   font: 23px 'Lato'; font-weight: 300; 
-  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/background-texture.jpg);
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg);
+  text-shadow:
+    0px 0px 0px rgba(000,000,000,0),
+    0px 2px 0px rgba(255,255,255,1);
 }
 h1#artist-title span {
   letter-spacing: normal;
   text-transform: uppercase;
   vertical-align: 18%;
   margin-left: 20px;
-  background: #c9c9c9; padding: 5px; 
+  
+/*background: rgb(238,238,238);
+background: -moz-linear-gradient(left,  rgba(234,234,234,1) 0%, rgba(214,214,214,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(234,234,234,1)), color-stop(100%,rgba(214,214,214,1)));
+background: -webkit-linear-gradient(left,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
+background: -o-linear-gradient(left,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
+background: -ms-linear-gradient(left,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
+background: linear-gradient(to right,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );*/
+background: rgb(229,229,229);
+background: -moz-linear-gradient(left,  rgba(229,229,229,1) 0%, rgba(204,204,204,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(229,229,229,1)), color-stop(100%,rgba(204,204,204,1)));
+background: -webkit-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
+background: -o-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
+background: -ms-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
+background: linear-gradient(to right,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#cccccc',GradientType=1 );
+
+
+border:1px solid rgba(218,218,218,1);
+border-left: 0 none;
+
+  padding: 5px; 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   font: bold 11px 'Helvetica Neue';
   color: rgba(255,255,255,.9);
+
+  text-shadow:
+    0px 0px 0px rgba(000,000,000,0),
+    0px 2px 0px rgba(135,135,135,.1);
 }
 
 
   h1#artist-title span .notch {
     position: absolute;
     top: 2.63em; 
-    left: 75px;
+    left: 70px; /* 75 mlb144 */
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 10px solid #c9c9c9;
+    border-right: 11px solid rgb(229,229,229);
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
+  }
+  h1#artist-title span .border-notch {
+    position: absolute;
+    top: 2.45em; 
+    left: 69.5px; 
+    margin: 0; padding: 0;
+    width: 0; height: 0;
+    border-right: 12px solid rgba(224,224,224,1);
+    border-bottom: 12px solid transparent; 
+    border-top: 12px solid transparent;   
   }
   h1#artist-title span .notches {
     position: absolute;
     top: 2.63em; 
-    left: 172px;
+    left: 168px;
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 10px solid #c9c9c9;
+    border-right: 11px solid rgb(229,229,229);
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
+  }
+  h1#artist-title span .border-notches {
+    position: absolute;
+    top: 2.45em; 
+    left: 167.5px; 
+    margin: 0; padding: 0;
+    width: 0; height: 0;
+    border-right: 12px solid rgba(224,224,224,1);
+    border-bottom: 12px solid transparent; 
+    border-top: 12px solid transparent;   
   }
   h1#artist-title span .notchmlb {
     position: absolute;
     top: 2.63em; 
-    left: 144px;
+    left: 133px;
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 10px solid #c9c9c9;
+    border-right: 11px solid rgb(229,229,229);
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
+  }
+  h1#artist-title span .border-notchmlb {
+    position: absolute;
+    top: 2.4em; 
+    left: 132px; 
+    margin: 0; padding: 0;
+    width: 0; height: 0;
+    border-right: 12px solid rgba(224,224,224,1);
+    border-bottom: 12px solid transparent; 
+    border-top: 12px solid transparent;   
   }
 
 /* Wookmark Plugin
