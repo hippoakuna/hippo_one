@@ -91,11 +91,18 @@ video {
 
 img.headshad {
   width: 882px;
-  position: absolute; top: -5px; left: 35px; /* top -4 */
+  position: absolute; top: -5px; left: 35px; 
 }
 img.topfloat {
   width: 899px; 
-  position: absolute; top: 72px; left: 70px; /* top 70 */
+  position: absolute; top: 72px; left: 70px; 
+}
+
+@media handheld, only screen and (max-width: 768px) {
+  img.topfloat {
+    width: 800px; 
+    position: absolute; top: 73px; left: 70px; 
+  }
 }
 
 /* #Header #Right
@@ -316,37 +323,28 @@ h1#artist-title span {
   vertical-align: 18%;
   margin-left: 20px;
   
-/*background: rgb(238,238,238);
-background: -moz-linear-gradient(left,  rgba(234,234,234,1) 0%, rgba(214,214,214,1) 100%);
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(234,234,234,1)), color-stop(100%,rgba(214,214,214,1)));
-background: -webkit-linear-gradient(left,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
-background: -o-linear-gradient(left,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
-background: -ms-linear-gradient(left,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
-background: linear-gradient(to right,  rgba(234,234,234,1) 0%,rgba(214,214,214,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );*/
-background: rgb(229,229,229);
-background: -moz-linear-gradient(left,  rgba(229,229,229,1) 0%, rgba(204,204,204,1) 100%);
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(229,229,229,1)), color-stop(100%,rgba(204,204,204,1)));
-background: -webkit-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
-background: -o-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
-background: -ms-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
-background: linear-gradient(to right,  rgba(229,229,229,1) 0%,rgba(204,204,204,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#cccccc',GradientType=1 );
+  background: rgb(220,220,220);
+  background: -moz-linear-gradient(left,  rgba(220,220,220,1) 0%, rgba(201,201,201,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(220,220,220,1)), color-stop(100%,rgba(201,201,201,1)));
+  background: -webkit-linear-gradient(left,  rgba(220,220,220,1) 0%,rgba(201,201,201,1) 100%);
+  background: -o-linear-gradient(left,  rgba(220,220,220,1) 0%,rgba(201,201,201,1) 100%);
+  background: -ms-linear-gradient(left,  rgba(220,220,220,1) 0%,rgba(201,201,201,1) 100%);
+  background: linear-gradient(to right,  rgba(220,220,220,1) 0%,rgba(201,201,201,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#c9c9c9',GradientType=1 );
 
-
-border:1px solid rgba(218,218,218,1);
-border-left: 0 none;
+  border:1px solid rgba(218,218,218,1);
+  border-left: 0 none;
 
   padding: 5px; 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   font: bold 11px 'Helvetica Neue';
-  color: rgba(255,255,255,.9);
+  color: rgba(255,255,255,1);
 
   text-shadow:
     0px 0px 0px rgba(000,000,000,0),
-    0px 2px 0px rgba(135,135,135,.1);
+    0px 2px 1px rgba(140,140,140,.1);
 }
 
 
@@ -356,17 +354,17 @@ border-left: 0 none;
     left: 70px; /* 75 mlb144 */
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 11px solid rgb(229,229,229);
+    border-right: 11px solid rgb(220,220,220);
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
   }
   h1#artist-title span .border-notch {
     position: absolute;
-    top: 2.45em; 
-    left: 69.5px; 
+    top: 2.37em; 
+    left: 69px; 
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 12px solid rgba(224,224,224,1);
+    border-right: 12px solid rgba(210,210,210,1);
     border-bottom: 12px solid transparent; 
     border-top: 12px solid transparent;   
   }
@@ -376,17 +374,17 @@ border-left: 0 none;
     left: 168px;
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 11px solid rgb(229,229,229);
+    border-right: 11px solid rgb(220,220,220);
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
   }
   h1#artist-title span .border-notches {
     position: absolute;
-    top: 2.45em; 
-    left: 167.5px; 
+    top: 2.37em; 
+    left: 167px; 
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 12px solid rgba(224,224,224,1);
+    border-right: 12px solid rgba(210,210,210,1);
     border-bottom: 12px solid transparent; 
     border-top: 12px solid transparent;   
   }
@@ -396,17 +394,17 @@ border-left: 0 none;
     left: 133px;
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 11px solid rgb(229,229,229);
+    border-right: 11px solid rgb(220,220,220);
     border-bottom: 10px solid transparent; 
     border-top: 10px solid transparent;   
   }
   h1#artist-title span .border-notchmlb {
     position: absolute;
-    top: 2.4em; 
+    top: 2.37em; 
     left: 132px; 
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-right: 12px solid rgba(224,224,224,1);
+    border-right: 12px solid rgba(210,210,210,1);
     border-bottom: 12px solid transparent; 
     border-top: 12px solid transparent;   
   }
