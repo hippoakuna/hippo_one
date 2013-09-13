@@ -385,7 +385,6 @@ h1#artist-title span {
     position: absolute;
     top: 2.63em; 
     left: 133px; 
-    -moz-left:129px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 11px solid rgb(220,220,220);
@@ -396,7 +395,6 @@ h1#artist-title span {
     position: absolute;
     top: 2.37em; 
     left: 132px; 
-    -moz-left:128px;
     margin: 0; padding: 0;
     width: 0; height: 0;
     border-right: 12px solid rgba(210,210,210,1);
@@ -426,71 +424,37 @@ height: 250px;
 /* Portrait iPad
 -------------------------------------------------------------------------------------*/
 
-@media handheld, only screen and (max-width: 768px) {
-  img.topfloat {
-    width: 800px; 
-    position: absolute; top: 71px; left: 70px; 
+@media handheld, only screen and (max-width: 1024px) { 
+  h1#artist-title span i {
+    display: none;
   }
-
-h1#artist-title span .notch {
-    position: absolute;
-    top: 2.63em; 
+  h1#artist-title span .notch {
+    display: none;
     left: 71px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 11px solid rgb(220,220,220);
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
   }
   h1#artist-title span .border-notch {
-    position: absolute;
-    top: 2.37em; 
-    left: 70px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 12px solid rgba(210,210,210,1);
-    border-bottom: 12px solid transparent; 
-    border-top: 12px solid transparent;   
+    display: none;
+    left: 70px;  
   }
   h1#artist-title span .notches {
-    position: absolute;
-    top: 2.63em; 
-    left: 170px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 11px solid rgb(220,220,220);
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
+    display: none;
+    left: 170px;  
   }
-  h1#artist-title span .border-notches {
-    position: absolute;
-    top: 2.37em; 
-    left: 169px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 12px solid rgba(210,210,210,1);
-    border-bottom: 12px solid transparent; 
-    border-top: 12px solid transparent;   
+  h1#artist-title span .border-notches { 
+    display: none;
+    left: 169px;   
   }
   h1#artist-title span .notchmlb {
-    position: absolute;
-    top: 2.63em; 
-    left: 132px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 11px solid rgb(220,220,220);
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
+    display: none;
+    left: 132px;   
   }
   h1#artist-title span .border-notchmlb {
-    position: absolute;
-    top: 2.37em; 
-    left: 131px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 12px solid rgba(210,210,210,1);
-    border-bottom: 12px solid transparent; 
-    border-top: 12px solid transparent;   
+    display: none;
+    left: 131px;    
   }  
 }
-
+@media handheld, only screen and (max-width: 770px) {
+  img.topfloat {
+    top: 71px; 
+  }
+} 
