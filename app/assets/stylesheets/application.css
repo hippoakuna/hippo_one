@@ -4,8 +4,10 @@
  *= require js/hoverjs/jquery.hoverscroll
  *= require js/lightview/lightview
  *= require js/lightview/demo_inline
+ *= require js/fancybox/jquery.fancybox
  *= require fonts/fonts
  */
+
 
 /* Basic
 -------------------------------------------------------------------------------------*/
