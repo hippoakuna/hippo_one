@@ -14,7 +14,4 @@
 //= require jquery_ujs
 //= require lightview/spinners/spinners.min
 //= require lightview/lightview/lightview
-//= require fancybox/jquery.fancybox
-//= require fancybox/jquery.fancybox-media
-//= require fancybox/jquery.mousewheel-3.0.6.pack
 //= require wookmark/jquery-1.7.1.min
