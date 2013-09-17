@@ -1,11 +1,9 @@
 == Hippo
 
-hippoartists.com 
+https://hippoartists.com
 
 Hippo™
 © 2013 Hippo, LLC. 
-Author: Kalani Akuna
-Version: 1.0
+Author: Kalani Akuna | Version: 1.0
 
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
-License: http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
