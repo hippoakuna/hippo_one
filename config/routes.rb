@@ -5,7 +5,7 @@ HippoOne::Application.routes.draw do
   match '/akunaphoto', to: 'akuna#akunaphoto', via: 'get'
   match '/akunatext',  to: 'akuna#akunatext',  via: 'get'
 
-  match '/melikebees', 		  to: 'melikebees#melikebees', 	    via: 'get'
+  match '/melikebees', 		to: 'melikebees#melikebees', 	  via: 'get'
   match '/melikebeesaudio', to: 'melikebees#melikebeesaudio', via: 'get'
   match '/melikebeesvideo', to: 'melikebees#melikebeesvideo', via: 'get'
   match '/melikebeesphoto', to: 'melikebees#melikebeesphoto', via: 'get'
