@@ -121,9 +121,9 @@ li.playing:before { content: url('audiojs/play-butt.png'); position: absolute; l
    -moz-border-radius: 4px;
    border-radius: 4px;
    
-   -webkit-box-shadow: 0px 2px 1px 0px #eee;
-   -moz-box-shadow:    0px 2px 1px 0px #eee;
-   box-shadow:         0px 2px 1px 0px #eee;  
+   -webkit-box-shadow: 0px 1px 1px 0px #eee;
+   -moz-box-shadow:    0px 1px 1px 0px #eee;
+   box-shadow:         0px 1px 1px 0px #eee;  
    border: 1px solid rgba(150,150,150,.25);
 }
 .view p {
