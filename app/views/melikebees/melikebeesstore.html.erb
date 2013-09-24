@@ -50,12 +50,40 @@
       <a href="https://squareup.com/market/hippo/tee-pee-tank-top" target="_blank" class="info"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/square.png" %><br>$15</a>
     </div>
   </div>
+<br><hr>
 
-<!-- 
+<!--
 ....................................................................
 -->    
 
-    <br><hr>  
+    
+    <!--div class="masonry-container">
+        <div class="masonry-item">
+          <a href="https://squareup.com/market/hippo/the-ides" class="sq-embed-item">The Ides - Me Like Bees from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item">
+          <a href="https://squareup.com/market/hippo/geometric-wolf" class="sq-embed-item">Geometric Wolf from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item">
+          <a href="https://squareup.com/market/hippo/sriracha" class="sq-embed-item">Sriracha from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item ">
+          <a href="https://squareup.com/market/hippo/naked-trees" class="sq-embed-item">Naked Trees from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item masonry-lg">
+          <a href="https://squareup.com/market/hippo/tee-pee-tank-top" class="sq-embed-item">Tee Pee Tank Top from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item">
+          <a href="https://squareup.com/market/hippo/teepeeveetee" class="sq-embed-item">Tee Pee V from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item">
+          <a href="https://squareup.com/market/hippo/elephant" class="sq-embed-item">Elephant from Hippo on Square Market</a>
+        </div>
+        <div class="masonry-item">
+          <a href="https://squareup.com/market/hippo/wolf-moon-giraffe" class="sq-embed-item">Wolf, Moon, Giraffe. from Hippo on Square Market</a><script src="https://cdn.sq-api.com/market/embed.js" id="sq-embed-js" charset="utf-8"></script>
+        </div>
+        
+      </div-->
     <ul class="my-list" style="list-style:none;">
 
       <li class="view-sixth" style="width: 206px; height: 309px;">
@@ -98,6 +126,15 @@
     </ul>
     <hr style="margin-bottom:-30px;">
 
+  
+  <!--%= javascript_include_tag "facebook/masonry.pkgd.min" %>
+  <script>
+    var containers, i, len;
+    containers = document.querySelectorAll('.masonry-container');
+    for (i = 0, len = containers.length; i < len; i++) {
+      new Masonry(containers[i], { itemSelector: '.masonry-item', gutter: 11 });
+    }
+  </script-->
 
 </div>
 </section>

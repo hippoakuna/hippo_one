@@ -10,4 +10,6 @@ HippoOne::Application.routes.draw do
   match '/melikebeesvideo', to: 'melikebees#melikebeesvideo', via: 'get'
   match '/melikebeesphoto', to: 'melikebees#melikebeesphoto', via: 'get'
   match '/melikebeesstore', to: 'melikebees#melikebeesstore', via: 'get'
+
+  match '/fbmlb', to: 'facebook#mlb', via: 'get' 
 end
