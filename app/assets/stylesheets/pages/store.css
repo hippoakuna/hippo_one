@@ -7,9 +7,9 @@ img#content-background {
   margin-left: -18px; width: 906px;
   top:106px; bottom: 0;
 }
-#content a:link {color:#666;}
-#content a:visited {color:#666;}
-#content a:hover {color:#666;}
+#content a:link {color:#aaa;}
+#content a:visited {color:#aaa;}
+#content a:hover {color:#aaa;}
 
 /* Pods
 -------------------------------------------------------------------------------------*/
@@ -41,26 +41,7 @@ img#content-background {
   margin: -16px 0 18px 0;
 }
 
-/* Masonry
--------------------------------------------------------------------------------------*/
-
-    .sq-embed-item {
-      display: none;
-    }
-    .masonry-container {
-      margin-top: 1px;
-      width: 100%;
-      clear: both;
-    }
-    .masonry-item {
-      width: 277px;
-      margin-bottom: 8px;
-    }
-    .masonry-item.masonry-lg {
-      width: 567px; /* 566 422px */
-    }
-
-    /* Hoverscroll
+/* Hoverscroll
 -------------------------------------------------------------------------------------*/
 
   .hoverscroll {
@@ -225,7 +206,7 @@ img.act:hover {
 
 .my-list small.price {
   margin-left:160px;
-  color:#666;
+  color:#aaa; /*666*/
 }
 
 
