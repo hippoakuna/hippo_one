@@ -1,0 +1,54 @@
+<% provide(:title, 'Dot') %>
+<%= stylesheet_link_tag 'pages/video' %>
+<%= javascript_include_tag "hoverjs/jquery" %>
+<%= javascript_include_tag "hoverjs/jquery.hoverscroll" %>
+
+  <!-- Hoverscroll --> 
+  <script>
+  $(document).ready(function() {
+        // Creating hoverscroll with fixed arrows
+    $('.my-list').hoverscroll({
+            fixedArrows: false,
+            rtl: false
+        });
+        // Starting the movement automatically at loading
+        // @param direction: right/bottom = 1, left/top = -1
+        // @param speed: Speed of the animation (scrollPosition += direction * speed)
+        var direction = -1,
+            speed = 3;
+        $(".my-list")[0].startMoving(direction, speed);
+  }); 
+  </script>
+
+<!-- 
+....................................................................
+-->
+
+<%= render 'title_sidebar' %>
+
+<!-- Main Content
+....................................................................
+-->
+
+<section id="content">
+<%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/main/packl.jpg", id: "content-background" %>
+<div id="main" class="clearfix">   
+
+    <div class="avatar">
+      <iframe src="//player.vimeo.com/video/75226647" class="feat-vid" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>   
+    </div>
+
+    <hr>
+
+    <ul class="my-list" style="list-style:none">
+      <li><iframe src="//player.vimeo.com/video/70729293" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li> 
+
+      <li><iframe src="//player.vimeo.com/video/70665749" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
+    </ul>
+
+    <hr>
+    <p style="font-size:10px;color:#666;margin-bottom:-8px;margin-top:-8px;">Double Click for <i class="icon-fullscreen"></i> Full Screen</p>
+
+
+</div>
+</section>
