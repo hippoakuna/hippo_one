@@ -102,11 +102,11 @@ img.topfloat {
 /* #Header #Right
 -------------------------------------------------------------------------------------*/
 
+#right img { opacity:.3; }
 #right a:link { opacity: 1; }
 #right a:hover { opacity: 1; }
 #right li {
-  float: right;
-  margin: -33px -2px 0;
+  position: relative; bottom: 33px; left: 930px;
 }
 
 /* #Header #Right Search

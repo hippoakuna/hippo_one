@@ -1,4 +1,31 @@
 
+#about-view {
+  width: 500px;
+  padding: 18px;
+  line-height: 1.5;
+  background: rgb(255,255,255);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(0%,rgba(242,242,242,1)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(242,242,242,1) 0%,rgba(255,255,255,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(242,242,242,1) 0%,rgba(255,255,255,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(242,242,242,1) 0%,rgba(255,255,255,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(242,242,242,1) 0%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+.about-container img {
+  width: 164px;
+  height: 90px;
+  margin-top: 5px;
+}
+.about-container h1 {
+  border-bottom: 1px solid rgba(150,150,150,.3); 
+  margin-top: -10px;
+  font-family: 'lato'; font-weight: 200;
+}
+.about-container iframe {
+  border: 1px solid rgba(150,150,150,.3); 
+}
+
 #demo_inline_element_square {
   float: left;
   position: relative;
@@ -54,66 +81,7 @@
   background: #141414;
   color: #fefefe;
 }
-
-#demo_inline_element .side { float: left; }
 #demo_inline_element .movie-container {
  width: 100%; height: 510px;
  overflow: hidden;
 }
-
-#demo_inline_element .description-container {
- width: 249px;
- height: 360px;
- position: relative;
-}
-
-#demo_inline_element .description-container h1 {
- font: normal 35px 'lane - narrow'; opacity: .6;
- text-transform: uppercase;
- margin-top: 10px;
- margin-bottom: 0;
-}
-#demo_inline_element .description-container h4 {
- font: normal 11px/18px "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman",Helvetica,Arial,sans-serif,Verdana;
- text-transform: uppercase;
- color: #666;
- position: relative; bottom: 0;
-}
-
-#demo_inline_element .description-container p {
-  font: normal 16px 'lato';
-}
-
-#demo_inline_element .tagContainer {
- float: left;
- width: 100%;
- clear: both;
-}
-#demo_inline_element .tagContainer .tag, 
-#demo_inline_element .tagContainer .tag:hover {
-    background-color: #080808;
-    background-image: url("/images/lightview/demonstrations/inline/tag_background.gif");
-    background-position: right center;
-    background-repeat: no-repeat;
-    color: #808080;
-    float: left;
-    line-height: 15px;
-    margin: 0 6px 5px 0px;
-    font-size: 8px;
-    text-transform: uppercase;
-    padding: 3px 19px 3px 5px;
-    text-decoration: none;
-    cursor: default;
-}
-
-#demo_inline_element .full {
-  float: right;
-  clear: both;
-  background: url("/images/lightview/demonstrations/inline/full_background.gif") right center no-repeat;
-  color: #808080;
-  height: 24px;
-  line-height: 24px;
-  padding: 3px 20px 3px 5px;
-  margin-bottom: 18px;
-}
-
