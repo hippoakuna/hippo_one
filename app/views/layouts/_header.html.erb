@@ -19,12 +19,20 @@
       <div class='about-container'>
         <h1>About</h1>
         <strong>Hippo</strong> is a platform to showcase artists and creative projects. Featured artists and projects include: 
-        <br><large><br>
-        <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/mlb1.jpg"), melikebees_path %>
-        <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/dot2.jpg"), dot_path %>
-        <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/aabnrblk2-2.png"), akuna_path %>
-        Me Like Bees <span style="margin-left:65px;">Dot</span> <span style="margin-left:140px">Akuna</span>
-    	</large><br><br>
+
+        <br><br>
+        <table style="width:100%"> 
+          <td><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/mlb1.jpg"), melikebees_path %><br>
+            Me Like Bees
+          </td>
+          <td><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/dot2.jpg"), dot_path %>
+            <br>Dot
+          </td>
+          <td><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/aabnrblk2-2.png"), akuna_path %><br>
+            Akuna
+          </td>
+        </table>
+        <br>
 
         We are developing social networking features, enabling any artist or project to create a free account and customize a page of their own. Stay updated on our progress and other news via <a href="https://www.facebook.com/hippoartists" target="_blank">Facebook</a> and our mailing list (<%= link_to "Sign up on Home page", root_path %>). <br><br>
 

@@ -271,6 +271,7 @@ button a:link, button a:visited, button a:hover, button a:active {
   text-decoration: none;  
 }
 
+
 /* LG Sidebar PODS
 -------------------------------------------------------------------------------------*/
 
@@ -278,6 +279,11 @@ button a:link, button a:visited, button a:hover, button a:active {
     -webkit-border-top-left-radius: 5px; 
     -moz-border-top-left-radius: 5px; 
     border-top-left-radius: 5px; 
+  }
+  #left-sidebar ul.lg-icons li {
+    -webkit-border-top-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    border-top-left-radius: 0;
   }
 
 /* Other
