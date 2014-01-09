@@ -1,0 +1,196 @@
+<% provide(:title, 'Pandora Playlist | GIVERS') %>
+<%= stylesheet_link_tag 'css/alt' %>
+
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=543263382412688";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<style>
+table.playlist { width: 92%;margin-left:5px; }
+table.playlist ol a li {
+  border-bottom: 1px solid #eee;
+  padding: 7px; 
+  font: 300 15px 'lato';
+}
+table.playlist ol a li:hover {
+  background: rgba(252,252,252,.8);
+  cursor: pointer;
+}
+table.playlist ol a li:last-child { border-bottom: 0;}
+</style>
+
+<!-- Feature Top ....................................................
+.....................................................................
+-->
+
+<div class="container_12">
+  
+  <br><span style="color:#333; font: 300 15px 'lato'; line-height: 1.5em;">PANDORA PLAYLIST 
+  </span><br>
+  <span class="featop"style="color:#333; font: 300 25px 'lato';">GIVERS</span>
+
+  <span style="float:right;margin-top:-5px;">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.hippoartists.com/pandora/givers" data-via="HippoArtists" data-count="none">Tweet</a>
+    <div style="margin-left:5px;" class="fb-like" data-href="https://www.hippoartists.com/pandora/givers" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+  </span>
+  
+  <img src="http://hippoartists.com.s3.amazonaws.com/images/main/main/bottom-line.png" style="position:relative;
+                                      bottom:-6px;"/>
+</div>
+
+<header style="height:100%; background: rgb(250,250,250);border-top:1px solid #ddd;">
+<div class="container_12" style="margin-bottom:20px;">
+      
+      <div class="section group" style="border:1px solid rgba(200,200,200,.4);">
+        <div class="col span_1_of_2">
+          <div id="wrapper">
+            <div id="listly">       
+              <div class="item feature-top">
+
+                <table style="background:#fff">
+                  <th><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/pan/5.jpg"%></th> 
+                  <th class="text">
+                    <p>        
+                      Indie / Rock<br>
+                      <span class="featop">Givers Pandora Playlist</span><br><br>
+                      Givers incorporate upbeat, beautiful instrumentals, coupled with catchy melodies and interesting lyrics. Here's some songs you might hear on this station:
+
+                      <table class="playlist">
+                        <th valign="top" id="tracks">   
+                          <ol class="graphic">
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Atlantic - Givers
+                            <span style="float:right;">4:54</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Thunder Clatter - Wild Cub
+                            <span style="float:right;">4:32</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Animal - Miike Snow
+                            <span style="float:right;">4:24</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Float On - Modest Mouse
+                            <span style="float:right;">3:29</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Electric Feel - MGMT
+                            <span style="float:right;">3:50</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Tighten Up - The Black Keys
+                            <span style="float:right;">3:31</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Islands - The xx
+                            <span style="float:right;">2:41</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Welcome Home, Son - Radical Face
+                            <span style="float:right;">4:46</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>Boy With A Coin - Iron &amp; Wine
+                            <span style="float:right;">4:06</li></a>
+
+                            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank"><li>New Slang - The Shins
+                            <span style="float:right;">3:51</li></a>
+
+
+                          </ol>  
+                        </th>
+                      </table>
+                    </p>
+                  </th>
+                </table>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+</div>
+</header>
+
+
+<div class="container_12">
+<img src="http://hippoartists.com.s3.amazonaws.com/images/main/main/top-line.png" style="position:relative;
+                                      bottom:3px;"/>
+</div>
+
+<div class="container_12" style="margin-bottom:20px;">
+    <div class="fb-comments" data-href="https://www.hippoartists.com/pandora/givers" data-width="960px" data-numposts="5" data-colorscheme="light"></div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer .........................................................
+.....................................................................
+-->
+
+  <footer>
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <div id="wrapper">
+          <div id="listly">    
+            <div class="container_12">
+            <div class="item footer">
+                         
+              <a target="_blank" href="https://www.facebook.com/hippoartists"><button class="newsletter"><i class="fa fa-facebook"></i>acebook</button></a>
+              <a target="_blank" href="https://twitter.com/hippoartists"><button class="newsletter" style="margin-right:5px"><i class="fa fa-twitter"></i> twitter</button></a>
+              
+              <form action="http://hippoartists.us7.list-manage1.com/subscribe/post?u=0d553d842dc3008a93c8478fe&amp;id=d7c6bb4c98" method="post" class="validate" target="_blank" novalidate style="margin-bottom:-7px">
+              <input type="email" placeholder="Subscribe with Email Address", name="EMAIL"> 
+              <button class="newsletter" type="submit" value="Subscribe" name="subscribe" style="margin-left:-4px"><i class="fa fa-chevron-right"></i></button>       
+              </form>​​​​
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- JavaScript, Etc. ...............................................
+.....................................................................
+-->
+
+
+<!-- Square -->
+<script src="https://cdn.sq-api.com/market/embed.js" id="sq-embed-js" charset="utf-8"></script>
+<%= javascript_include_tag "masonry/masonry.pkgd.min" %>
+<%= javascript_include_tag "masonry/jQuery" %>
+<%= javascript_include_tag "masonry/mason" %>
+<script>
+  var containers, i, len;
+  containers = document.querySelectorAll('.masonry-container');
+  for (i = 0, len = containers.length; i < len; i++) {
+    new Masonry(containers[i], { itemSelector: '.masonry-item', gutter: 10 });
+  }
+</script>
+
+
+<!-- SlidesJS  -->
+<%= javascript_include_tag "slidesjs/jquery.slides.min" %>
+<script>
+  $(function() {
+    $('#slides').slidesjs({
+      width: 960,
+      height: 541,        
+      navigation: false,
+      play: {
+        active: true,
+        auto: true,
+        interval: 7000,
+        swap: true
+      }
+    });
+  });
+</script> 

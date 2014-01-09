@@ -1,53 +1,6 @@
-  <div id="header">
 
-   
-    <ul> 
-      <li><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/main/hippo-logo-greentext.png",width:'100', class: "hippo-logo"), root_path %></li> 
-      <ul id="right">
-
-        <!--li style="margin:0px 0 0 -50px;">
-          <a href='#'>
-          <%= image_tag "user.png", size: "32x32" %>
-          </a> 
-        </li style="margin-top:-35px;" -->
-      	<li>
-      	  <a href='#about-view' class='lightview'
-		      data-lightview-options="skin: 'light', controls: { type: 'relative', slider: false, close: 'false' }">
-		      <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/icons/main/info.png", size: "32x32" %>
-		      </a> 
-      	</li>
-        
-      </ul> 
-    </ul>    
-    
-  </div>
-
-
-
-
-
-  	 
-    <div id='about-view' style='display:none'>
-      <div class='about-container'>
-        <h1>About</h1>
-        <strong>Hippo</strong> is a platform to showcase artists and creative projects. Featured artists and projects include: 
-
-        <br><br>
-        <table style="width:100%"> 
-          <td><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/mlb1.jpg"), melikebees_path %><br>
-            Me Like Bees
-          </td>
-          <td><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/dot2.jpg"), dot_path %>
-            <br>Dot
-          </td>
-          <td><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/aabnrblk2-2.png"), akuna_path %><br>
-            Akuna
-          </td>
-        </table>
-        <br>
-
-        We are developing social networking features, enabling any artist or project to create a free account and customize a page of their own. Stay updated on our progress and other news via <a href="https://www.facebook.com/hippoartists" target="_blank">Facebook</a> and our mailing list (<%= link_to "Sign up on Home page", root_path %>). <br><br>
-
-        <iframe width="100%" height="120px" frameBorder='0' src='http://a.tiles.mapbox.com/v3/kalaniakuna.map-tu9a7lx7.html#13/37.084351498663175/-94.51357841491699'></iframe>
-      </div>
+  <div class="codrops-top clearfix" style="border-bottom:1px solid #ddd;font-size:18px;">
+    <div class="container_12">
+    <a><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/main/hippo-logo-greentext.png",width:'80', class: "hippo-logo"), root_path %></a>
     </div>
+  </div>

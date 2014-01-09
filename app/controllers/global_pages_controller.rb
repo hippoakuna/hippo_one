@@ -2,6 +2,6 @@ class GlobalPagesController < ApplicationController
   def home
   end
 
-  def legal
+  def alt
   end
 end

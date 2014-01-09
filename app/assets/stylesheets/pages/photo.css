@@ -1,13 +1,26 @@
-
 #content {
-  height: 100%; 
-  margin: 8em 0 0 4.4em; padding: 18px;
+  min-height: 560px;
+  margin: 7.5em 0 0 4.3em; padding: 18px;
 }
 img#content-background {
   position: fixed; z-index: -9999;
-  margin-left: -18px; width: 906px;
+  margin-left: -18px; width: 906px; 
   top:106px; bottom: 0;
 }
+.codrops-top {
+  position:fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  width:100%;
+  height: 40px;
+}
+@media screen{
+  body>div#left-sidebar{position:fixed;}
+  body>.codrops-top{position:fixed;}  
+ }
+ * html body{overflow:hidden;} 
+ * html #content{overflow:auto;}
+ * html #main {overflow: auto;}
 
 /* Pods
 -------------------------------------------------------------------------------------*/
@@ -23,7 +36,7 @@ img#content-background {
   #left-sidebar ul.lg-icons li.profile {
     border-top: 1px solid #333;
     border-bottom: 0 none;
-    position: absolute; bottom: 10.7em; /* 8em */
+    position: absolute; bottom: 10em; 
   }
 
 
@@ -66,7 +79,7 @@ div.clear {
 #tiles li {
   display: none;
     cursor: pointer; 
-  background: rgb(255,255,255);
+  
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
@@ -74,7 +87,10 @@ div.clear {
   background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  background: rgb(255,255,255);
+
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+
 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

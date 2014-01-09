@@ -12,6 +12,7 @@ Author: Kalani Akuna
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Lato:300,400,900' %>
+  <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' %>
   <%= stylesheet_link_tag    "application", media: "all", 
   "data-turbolinks-track" => true %>  
   <%= javascript_include_tag "application", 
@@ -34,15 +35,18 @@ Author: Kalani Akuna
 </head>
 
 <body>
-  <div class="container_12">
-    <%= render 'layouts/header' %>
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
-    <% end %>
-    <%= yield %>
-  </div>
-</body>
+<div class="container demo-3">
+  
+  <%= render 'layouts/header' %>
 
+  <% flash.each do |key, value| %>
+    <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+  <% end %>
+
+  <%= yield %>
+
+</div>
+</body>
 </html>
 
 

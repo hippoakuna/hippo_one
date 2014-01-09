@@ -1,0 +1,107 @@
+/*  Basic ---------------------------------------------------------
+-------------------------------------------------------------------*/
+
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; } /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:after { clear: both; }
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Calibri, Arial, sans-serif;
+  color: #b3b9bf;
+  background: #f9f9f9;
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg) top repeat;
+}
+a { color: #888; text-decoration: none; }
+a:hover, a:active { color: #333; }
+
+/*  Header --------------------------------------------------------
+-------------------------------------------------------------------*/
+
+.codrops-top {
+  background: rgba(255, 255, 255, 0.6);
+  background: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 0.69em;
+  line-height: 2.2;
+}
+.codrops-top a {
+  letter-spacing: 0.1em;
+  color: #888;
+  display: inline-block;
+}
+.codrops-top a:hover { color: #333; cursor: pointer; }
+.codrops-top span.right { float: right; }
+.codrops-top span.right a { float: left; display: block; }
+.codrops-top img.hippo-logo { margin-bottom:-4px; }
+
+/*  Feature --------------------------------------------------------
+-------------------------------------------------------------------*/
+
+.container > header {
+  height: 353px; /*358*/ 
+  padding: 1.2em 1.2em 0 1.2em;
+  border-bottom:1px solid #ddd;
+  background: #fff; color: #fff;
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back2back2.png) top repeat;
+  background-size: 100%;
+}
+.container > header h1 {
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300;
+}
+
+/*  Footer --------------------------------------------------------
+-------------------------------------------------------------------*/
+
+.container > footer {
+  padding: 1.5em 1.5em 1.4em 1.5em;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(248,248,248,1) 50%, rgba(245,245,245,1) 51%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(248,248,248,1)), color-stop(51%,rgba(245,245,245,1)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  background-size: 100%;
+  border-top:1px solid #ddd;
+}
+
+/*  Footer Subscribe ----------------------------------------------
+-------------------------------------------------------------------*/
+
+button.newsletter {
+  background:rgba(117,189,209,1);
+  border: 0px solid rgba(255,255,255,.2);
+  margin-top: 17px; margin-right: 0;
+  height: 39px; padding: 0 15px 0 15px;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  font: bold 80%/2.1 'Helvetica Neue', "Lucida Grande", Tahoma, sans-serif;
+  color: #fff;
+  text-align: center; text-decoration: none;
+  text-shadow: inset 0 1px 0 rgba(0,0,0,0.5);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-border-radius: .1em;
+  -webkit-border-radius: .1em;
+  border-radius: .1em;
+}
+input[type=email] {
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg) top repeat;
+  font: normal 12px 'Helvetica neue', 'lato', Helvetica;
+  height: 27px; width: 716px;
+  padding:5px 5px 5px 10px;
+  border: 1px solid #ccc;
+}
+input[type=email]:hover,
+input[type=email]:focus { outline: none; }
+
+form { display: inline; }
+

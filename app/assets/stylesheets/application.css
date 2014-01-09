@@ -5,238 +5,45 @@
  *= require js/lightview/lightview
  *= require js/lightview/demo_inline
  *= require fonts/fonts
+ *= require css/default
  */
 
+/* Screen Fix -----------------------------------------------------*/
 
-/* Basic
--------------------------------------------------------------------------------------*/
-
-body { 
-  margin:0; padding:0; 
-  font: normal 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;  
-  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg) top repeat;
-}
-#header {
-  background: rgb(247,247,247);
-  background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(255,255,255,1) 98%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(98%,rgba(255,255,255,1)));
-  background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
-  background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
-  background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
-  background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(255,255,255,1) 98%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 );
-  border-bottom: 1px solid rgba(150,150,150,.25);
-  
-  position:fixed;
-  top: 0; left: 0;
-  z-index: 9999;
-  width:100%;
-  height: 3em;
-} 
-
-a:link {color: #0084b4; text-decoration: none;}  
-a:visited {color: #0084b4; text-decoration: none;} 
-a:hover {color: #1794B3; text-decoration: none;}     
-a:active {color: rgba(1,1,1,1); text-decoration: none;} 
-
-/* Screen Fix
--------------------------------------------------------------------------------------*/
-
- @media screen{
-  body>div#left-sidebar{
-   position:fixed;
-  }
-  body>div#header{
-   position:fixed;
-  }  
-  body>div#footer{
-   position:fixed;
-  }
+ @media screen {
+  body>div#left-sidebar { position:fixed; }
+  body>div#header{ position:fixed; }  
  }
- * html body{
-  overflow:hidden; 
- } 
- * html #content{
-  overflow:auto;
- }
- * html #main {
-  overflow: auto;
- }
+ * html body { overflow:hidden; } 
+ * html #content { overflow:auto; }
+ * html #main { overflow: auto; }
 
-/* Images
--------------------------------------------------------------------------------------*/
+/* Images ---------------------------------------------------------*/
 
-img,
-embed,
-object,
-video {
-  max-width: 100%;
-}
+img,embed,object,video { max-width: 100%; }
 
-/* Header
--------------------------------------------------------------------------------------*/
-
-#header ul {
-  width: 953px; 
-  margin: auto;
-  list-style: none;
-  padding: 0;
-}
-#header li img.hippo-logo {  
-  opacity: 1;
-  margin: 11px 0 0 -7px; padding: 0;
-}
-
-/* Header Shadow
--------------------------------------------------------------------------------------*/
-
-img.headshad {
-  width: 882px;
-  position: absolute; top: -5px; left: 35px; 
-}
 img.topfloat {
-  width: 899px; 
-  position: absolute; top: 72px; left: 70px; 
+  width: 897px;
+  position: absolute; top: 72px; left: 70px;  
 }
 
-/* #Header #Right
--------------------------------------------------------------------------------------*/
+/* Other ----------------------------------------------------------*/
 
-#right img { opacity:.3; }
-#right a:link { opacity: 1; }
-#right a:hover { opacity: 1; }
-#right li {
-  position: relative; bottom: 33px; left: 930px;
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+div.clear {
+  position: absolute; top: 66px; right: 265px;
+  background: rgba(255,255,255,.5);
+  height: 444px; width: 290px;
 }
 
-/* #Header #Right Search
--------------------------------------------------------------------------------------*/
-
-.search {
-  position: relative; bottom: 33px; left: 670px;
-}
-.search input[type="text"]{ 
-    width:200px; height:30px;
-    padding:0 14px 0 14px;    
-    outline:none;
-    text-indent:1px; line-height:18px; color:#444; 
-    -webkit-text-shadow:1px 1px 1px rgba(0,0,0,0.05);
-    text-shadow:1px 1px 1px rgba(0,0,0,0.05);
-
-    background: rgb(247,247,247);
-    background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(246,246,246,1) 47%, rgba(242,242,242,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(242,242,242,1)));
-    background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-    background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-    background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(246,246,246,1) 47%,rgba(242,242,242,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f2f2f2',GradientType=0 );
-
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;    
-    
-    box-shadow: 0 1px 1px rgba(0,0,0,.2) inset, 0 1px 0 rgba(255,255,255,.2);
-    border: 1px solid #d9d9d9;
-}  
-.search ::-webkit-input-placeholder { color: #666; font-family: 'Lato'; }
-.search :-moz-placeholder { color: #666; font-family: 'Lato'; }
-.search ::-moz-placeholder { color: #666; font-family: 'Lato'; }
-.search :-ms-input-placeholder { color: #666; font-family: 'Lato'; }
-
-
-/* #Header #Right Buttons
--------------------------------------------------------------------------------------*/
-
-button.signup {
-  height: 32px; min-width: 53px; color: #555; font-size: 10px;
-  -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  border: 1px solid rgba(200,200,200,.3); 
-  
-  background: rgb(252,252,252);
-  background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
-  background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
-  background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
-  background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;    
-}
-button.signup:hover {
-  border: 1px solid #d3d3d3;
-  cursor: pointer;
-  background: -moz-linear-gradient(
-    top,
-    #ffffff 0%,
-    #dedede);
-  background: -webkit-gradient(
-    linear, left top, left bottom, 
-    from(#ffffff),
-    to(#dedede));
-  -moz-box-shadow:
-    inset 0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  -webkit-box-shadow:
-    inset 0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  box-shadow:
-    inset 0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  text-shadow:
-    0px 0px 0px rgba(000,000,000,0),
-    0px 2px 0px rgba(255,255,255,1);
-}
-
-button.linkaway {
-  height: 32px; width: 33px; color: #555; font-size: 10px;
-  -webkit-text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  border: 1px solid rgba(220,220,220,.7);
-  background: none;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px; 
-}
-button.linkaway:hover {
-  border: 1px solid rgba(220,220,220,.7);
-  cursor: pointer;
-  background: -moz-linear-gradient(
-    top,
-    #ffffff 0%,
-    #dedede);
-  background: -webkit-gradient(
-    linear, left top, left bottom, 
-    from(#ffffff),
-    to(#dedede));
-  -moz-box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  -webkit-box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  box-shadow:
-    0px 1px 1px rgba(143,143,143,0.5),
-    inset 0px 0px 14px rgba(227,227,227,1);
-  text-shadow:
-    0px 0px 0px rgba(000,000,000,0),
-    0px 2px 0px rgba(255,255,255,1); 
-}
-
-button a:link, button a:visited, button a:hover, button a:active {
-  color: rgba(1,1,1,.8); text-decoration: none;
-}  
-
-
-
-/* LG Sidebar
--------------------------------------------------------------------------------------*/
+/* LG Sidebar -----------------------------------------------------
+-------------------------------------------------------------------*/
 
 #left-sidebar {
+  font-family: 'Helvetica Neue', Helvetica;
   background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/Linen-iPhone-2.png) top repeat;
   margin: 0; padding: 0; margin-top: 0em;
   position: fixed; 
@@ -254,68 +61,47 @@ button a:link, button a:visited, button a:hover, button a:active {
   border-bottom: 1px solid #333;
   padding-bottom: .25em;
 }
-#left-sidebar ul.lg-icons:first-child {
-  margin-top: 0;
-}
+#left-sidebar ul.lg-icons:first-child { margin-top: 0; }
 #left-sidebar ul.lg-icons li img {
   opacity: .5;
   width: 35px; height: 35px;
   padding: .9em 6px 0 6px;
 }
-#left-sidebar ul.lg-icons li:hover img {
-  opacity: .8;
-}
+#left-sidebar ul.lg-icons li:hover img { opacity: .8; }
 #left-sidebar ul.lg-icons li:hover {
   background: rgba(1,1,1,.2); 
   color: rgba(255,255,255,.8); 
   text-decoration: none;  
 }
 
+/* Pods -----------------------------------------------------------*/
 
-/* LG Sidebar PODS
--------------------------------------------------------------------------------------*/
-
-  #left-sidebar ul.lg-icons li:first-child {
-    -webkit-border-top-left-radius: 5px; 
-    -moz-border-top-left-radius: 5px; 
-    border-top-left-radius: 5px; 
-  }
-  #left-sidebar ul.lg-icons li {
-    -webkit-border-top-left-radius: 0;
-    -moz-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-  }
-
-/* Other
--------------------------------------------------------------------------------------*/
-
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-div.clear {
-  position: absolute; top: 66px; right: 265px;
-  background: rgba(255,255,255,.5);
-  height: 444px; width: 290px;
+#left-sidebar ul.lg-icons li:first-child {
+  -webkit-border-top-left-radius: 5px; 
+  -moz-border-top-left-radius: 5px; 
+  border-top-left-radius: 5px; 
+}
+#left-sidebar ul.lg-icons li {
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 /* Artist Pages
 -------------------------------------------------------------------------------------*/
 
+h1#artist-title {
+  z-index: 2; width:100%; padding: 22px 0px 22px 0; 
+  position: fixed; top: 25px; letter-spacing: 0px;
+  font: 300 23px 'Lato'; 
+  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg);
+  color: #333;
+}
 h1#artist-title i {
   position: relative; left: -5px; bottom: 1px; font-size: 10px;
     text-shadow:
     0px 0px 0px rgba(000,000,000,0),
     0px -2px 0px rgba(135,135,135,.1);
-}
-h1#artist-title {
-  z-index: 2; width:100%; padding: 22px 0px 22px 0; 
-  position: fixed; top: 34px; letter-spacing: 0px;
-  font: 23px 'Lato'; font-weight: 300; 
-  background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg);
-  text-shadow:
-    0px 0px 0px rgba(000,000,000,0),
-    0px 2px 0px rgba(255,255,255,1);
 }
 h1#artist-title span {
   letter-spacing: normal;
@@ -347,68 +133,6 @@ h1#artist-title span {
     0px 2px 1px rgba(140,140,140,.1);
 }
 
-
-  h1#artist-title span .notch {
-    position: absolute;
-    top: 2.63em; 
-    left: 70px; /* 75 mlb144 */
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 11px solid rgb(220,220,220);
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
-  }
-  h1#artist-title span .border-notch {
-    position: absolute;
-    top: 2.37em; 
-    left: 69px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 12px solid rgba(210,210,210,1);
-    border-bottom: 12px solid transparent; 
-    border-top: 12px solid transparent;   
-  }
-  h1#artist-title span .notches {
-    position: absolute;
-    top: 2.63em; 
-    left: 168px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 11px solid rgb(220,220,220);
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
-  }
-  h1#artist-title span .border-notches {
-    position: absolute;
-    top: 2.37em; 
-    left: 167px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 12px solid rgba(210,210,210,1);
-    border-bottom: 12px solid transparent; 
-    border-top: 12px solid transparent;   
-  }
-  h1#artist-title span .notchmlb {
-    position: absolute;
-    top: 2.63em; 
-    left: 133px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 11px solid rgb(220,220,220);
-    border-bottom: 10px solid transparent; 
-    border-top: 10px solid transparent;   
-  }
-  h1#artist-title span .border-notchmlb {
-    position: absolute;
-    top: 2.37em; 
-    left: 132px; 
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-right: 12px solid rgba(210,210,210,1);
-    border-bottom: 12px solid transparent; 
-    border-top: 12px solid transparent;   
-  }
-
 /* Wookmark Plugin
 -------------------------------------------------------------------------------------*/
 
@@ -431,7 +155,6 @@ height: 250px;
 /* Portrait iPad
 -------------------------------------------------------------------------------------*/
 
-/*@media handheld, only screen and (max-width: 1024px) {*/ 
   h1#artist-title span {
     padding: 5px 8px; 
     margin-right:-10px;
@@ -439,33 +162,3 @@ height: 250px;
   h1#artist-title span i {
     display: none;
   }
-  h1#artist-title span .notch {
-    display: none;
-    left: 71px; 
-  }
-  h1#artist-title span .border-notch {
-    display: none;
-    left: 70px;  
-  }
-  h1#artist-title span .notches {
-    display: none;
-    left: 170px;  
-  }
-  h1#artist-title span .border-notches { 
-    display: none;
-    left: 169px;   
-  }
-  h1#artist-title span .notchmlb {
-    display: none;
-    left: 132px;   
-  }
-  h1#artist-title span .border-notchmlb {
-    display: none;
-    left: 131px;    
-  }  
-
-@media handheld, only screen and (max-width: 770px) {
-  img.topfloat {
-    top: 70px; 
-  }
-} 

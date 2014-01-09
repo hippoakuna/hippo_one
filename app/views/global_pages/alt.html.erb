@@ -1,0 +1,237 @@
+<% provide(:title) %>
+<%= stylesheet_link_tag 'css/alt' %>
+
+<!-- Feature Top ....................................................
+.....................................................................
+-->
+
+  <header style="margin-bottom: 20px;">
+    <div class="container_12">
+    <div id="slides">
+  
+      <div class="section group">
+        <div class="col span_1_of_2">
+          <div id="wrapper">
+            <div id="listly">       
+                <div class="item feature-top">
+                  <table>
+                    <th><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/mlb.jpg"), melikebees_path %></th> 
+                    <th class="text">
+                      <p>
+                        <span class="featop">ME LIKE BEES <i class="fa fa-music"></i></span>
+                         <br><br>
+                         Me Like Bees is an indie/alt rock band from Joplin Missouri. Formed in May of 2009, the group has developed their sound with influences from bands such as Modest Mouse, Arcade Fire and The White Stripes.
+                        <br><br>
+                        <a href="melikebees"><button class="newsletter"> Featured Page <i style="margin-left:8px" class="fa fa-chevron-right"></i></button></a>
+                      </p>
+                    </th>
+                  </table>
+                </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section group">
+        <div class="col span_1_of_2">
+          <div id="wrapper">
+            <div id="listly">       
+                <div class="item feature-top">
+                  <table>
+                    <th><%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/dot2.jpg"), dot_path %></th> 
+                    <th class="text">
+                      <p>
+                        <span class="featop">DOT <i class="fa fa-video-camera"></i></span>
+                         <br><br>
+                         Dot, a 16-year-old girl suffering from OCD, who compulsively kills anyone she sees making a mess, struggles with her inability to keep anyone close as a charming, young rabbit breeder pushes his way into her life.
+                        <br><br>
+                        <a href="dot"><button class="newsletter"> Featured Page <i style="margin-left:8px" class="fa fa-chevron-right"></i></button></a>
+                      </p>
+                    </th>
+                  </table>
+                </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-caret-left"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-caret-right"></i></a>
+
+    </div>
+    </div>
+  </header>
+
+<header style="height:40px;
+              padding:0;
+              margin-top: -21px; 
+              background: none;">
+</header>
+
+<div class="container_12">
+<img src="http://hippoartists.com.s3.amazonaws.com/images/main/main/top-line.png" style="position:relative;
+                                      bottom:3px;"/>
+</div>
+
+<!-- Main Features ..................................................
+.....................................................................
+-->
+
+<div class="container_12">
+
+<div id="maincontentcontainer" >
+<div id="maincontent">
+
+<!-- ............................................................ -->
+
+  <div class="directory" style="margin-bottom:10px;">
+    <div id="itemContainer" class="wrapper">
+
+      <div class="masonry-container">
+        <div class="masonry-item masonry-lg">
+          <a href="https://squareup.com/market/color-jar/fine-art-print-x-tallulah" class="sq-embed-item"></a>
+        </div>
+        <div class="masonry-item masonry-lg">
+          <div class="tile-lg">
+            <div class="merch view-sixth">
+              <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/hit/panhit-sq.jpg", class: "featured" %>
+              <div class="mask"> 
+                <a href="hitrecord/hat-inky-remix"><button class="maskbutton">Click for More Details</button></a>
+                <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/hit.png", class: "watermark" %>
+              </div>
+            </div>
+            <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/hit.png", class: "watermark" %>
+            <h1>Hat (Inky Remix) <span class="spanright"><i class="fa fa-picture-o" style="margin-right:3px;"></i></span></h1>
+            <p>HitRECord Feature</p>
+            <a href="hitrecord/hat-inky-remix">More Details</a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="masonry-container">
+        <div class="masonry-item">
+          <div class="tile">
+            <div class="merch view-sixth">
+              <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/net/wmk-sq.jpg", class: "featured item", size: "283x283" %>
+              <div class="mask"> 
+                <a href="netflix/indie-picks"><button class="maskbutton">See List</button></a>
+                <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/net.png", class: "watermark" %>
+              </div>
+            </div>
+            <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/net.png", class: "watermark" %>
+            <h1 style="margin-top:9px">Indie Picks<span class="spanright"><i class="fa fa-video-camera" style="margin-right:3px;"></i></span></h1>
+            <p>Netflix Playlist</p>
+            <a href="netflix/indie-picks">More Details</a>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class="tile">
+            <div class="merch view-sixth">
+              <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/kick/barstow-sq.jpg", class: "featured", size: "283x283" %>
+              <div class="mask"> 
+                <a href="kickstarter/barstow"><button class="maskbutton">Website</button></a>
+                <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/kick.png", class: "watermark" %>
+              </div>
+            </div>  
+            <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/kick.png", class: "watermark" %>
+            <h1>BARSTOW: A Film Inspired By Family <span class="spanright"><i class="fa fa-video-camera" style="margin-right:3px;"></i></span></h1>
+            <p>Kickstarter Feature</p>
+            <a href="kickstarter/barstow">More Details</a>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class="tile">
+            <div class="merch view-sixth">
+              <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/pan/7.jpg", class: "featured", size: "283x283" %>
+              <div class="mask"> 
+                <a href="pandora/givers"><button class="maskbutton">See List</button></a>
+                <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/pan.png", class: "watermark" %>
+              </div>
+            </div>           
+            <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/pan.png", class: "watermark" %>
+            <h1>Givers <span class="spanright"><i class="fa fa-music" style="margin-right:3px;"></i></span></h1>
+            <p>Pandora Playlist</p>
+            <a href="https://play.spotify.com/user/hippoartists/playlist/7d1jUzdqU6TL0C2To0mFZ2" target="_blank">Open In Spotify</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- 
+.....................................................................
+-->  
+
+</div>
+</div>
+
+</div>
+
+<!-- Footer .........................................................
+.....................................................................
+-->
+
+  <footer>
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <div id="wrapper">
+          <div id="listly">    
+            <div class="container_12">
+            <div class="item footer">
+                         
+              <a target="_blank" href="https://www.facebook.com/hippoartists"><button class="newsletter"><i class="fa fa-facebook"></i>acebook</button></a>
+              <a target="_blank" href="https://twitter.com/hippoartists"><button class="newsletter" style="margin-right:5px"><i class="fa fa-twitter"></i> twitter</button></a>
+              
+              <form action="http://hippoartists.us7.list-manage1.com/subscribe/post?u=0d553d842dc3008a93c8478fe&amp;id=d7c6bb4c98" method="post" class="validate" target="_blank" novalidate style="margin-bottom:-7px">
+              <input type="email" placeholder="Subscribe with Email Address", name="EMAIL"> 
+              <button class="newsletter" type="submit" value="Subscribe" name="subscribe" style="margin-left:-4px"><i class="fa fa-chevron-right"></i></button>       
+              </form>​​​​
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- JavaScript, Etc. ...............................................
+.....................................................................
+-->
+
+
+<!-- Square -->
+<script src="https://cdn.sq-api.com/market/embed.js" id="sq-embed-js" charset="utf-8"></script>
+<%= javascript_include_tag "masonry/masonry.pkgd.min" %>
+<%= javascript_include_tag "masonry/jQuery" %>
+<%= javascript_include_tag "masonry/mason" %>
+<script>
+  var containers, i, len;
+  containers = document.querySelectorAll('.masonry-container');
+  for (i = 0, len = containers.length; i < len; i++) {
+    new Masonry(containers[i], { itemSelector: '.masonry-item', gutter: 10 });
+  }
+</script>
+
+
+<!-- SlidesJS  -->
+<%= javascript_include_tag "slidesjs/jquery.slides.min" %>
+<script>
+  $(function() {
+    $('#slides').slidesjs({
+      width: 960,
+      height: 541,        
+      navigation: false,
+      play: {
+        active: true,
+        auto: true,
+        interval: 7000,
+        swap: true
+      }
+    });
+  });
+</script> 

@@ -1,12 +1,26 @@
 #content {
-  height: 100%; 
-  margin: 8em 0 0 4.4em; padding: 18px;
+  min-height: 560px;
+  margin: 7.5em 0 0 4.3em; padding: 18px;
 }
 img#content-background {
   position: fixed; z-index: -9999;
-  margin-left: -18px; width: 906px;
+  margin-left: -18px; width: 906px; 
   top:106px; bottom: 0;
 }
+.codrops-top {
+  position:fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  width:100%;
+  height: 40px;
+}
+@media screen{
+  body>div#left-sidebar{position:fixed;}
+  body>.codrops-top{position:fixed;}  
+ }
+ * html body{overflow:hidden;} 
+ * html #content{overflow:auto;}
+ * html #main {overflow: auto;}
 
 /* Pods
 -------------------------------------------------------------------------------------*/
@@ -22,7 +36,7 @@ img#content-background {
   #left-sidebar ul.lg-icons li.profile {
     border-top: 1px solid #333;
     border-bottom: 0 none;
-    position: absolute; bottom: 10.7em; /* 8em */
+    position: absolute; bottom: 10em; 
   }
 
 

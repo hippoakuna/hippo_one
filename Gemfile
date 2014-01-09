@@ -4,7 +4,8 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 gem 'rails_12factor', '0.0.2'
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+#gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'will_paginate'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'

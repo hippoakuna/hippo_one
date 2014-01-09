@@ -1,64 +1,61 @@
 #content {
   min-height: 560px;
-  margin: 8em 0 0 4.4em; padding: 18px;
+  margin: 7.5em 0 0 4.3em; padding: 18px;
 }
 img#content-background {
   position: fixed; z-index: -9999;
   margin-left: -18px; width: 906px; 
   top:106px; bottom: 0;
 }
+.codrops-top {
+  position:fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  width:100%;
+  height: 40px;
+}
+@media screen{
+  body>div#left-sidebar{position:fixed;}
+  body>.codrops-top{position:fixed;}  
+ }
+ * html body{overflow:hidden;} 
+ * html #content{overflow:auto;}
+ * html #main {overflow: auto;}
 
 /* Pods
 -------------------------------------------------------------------------------------*/
 
-  #left-sidebar ul.lg-icons li.profile {
-    background: rgba(1,1,1,.2);    
-    color: rgba(255,255,255,.8);   
-  }
-  #left-sidebar ul.lg-icons li.profile img {
-    opacity: .8;   
-  }
-
-  #left-sidebar ul.lg-icons li.profile {
-    border-top: 1px solid #333;
-    border-bottom: 0 none;
-    position: absolute; bottom: 10.7em; 
-  }
+#left-sidebar ul.lg-icons li.profile {
+  background: rgba(1,1,1,.2);    
+  color: rgba(255,255,255,.8);   
+}
+#left-sidebar ul.lg-icons li.profile img { opacity: .8; }
+#left-sidebar ul.lg-icons li.profile {
+  border-top: 1px solid #333;
+  border-bottom: 0 none;
+  position: absolute; bottom: 10em; 
+}
 
 /* Avatar
 -------------------------------------------------------------------------------------*/
 
 #content .avatar img {
   background: #d0d0d0;
-  height: 480px; width: 853px; 
+  height: 481px; width: 855px; 
 }
 
 #content .avatar table.avp {
-  width: 99.8%;
-  color: #666; 
-  margin: 0; margin-top: -3px; margin-left: 1px; padding: 0;
+  width: 100%;
+  color: #666; text-shadow:1px 1px 1px rgba(255,255,255, 1);
+  margin: -3px 0 0 0; padding: 0;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
-
-
-  border: 1px solid rgba(150,150,150,.3);
- -webkit-box-shadow: 0px 1px 1px 0px #eee;
-  -moz-box-shadow:    0px 1px 1px 0px #eee;
-  box-shadow:         0px 1px 1px 0px #eee;
-
-  background: rgb(255,255,255);  background: rgb(255,255,255);
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(248,248,248,1) 50%, rgba(245,245,245,1) 51%, rgba(255,255,255,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(248,248,248,1)), color-stop(51%,rgba(245,245,245,1)), color-stop(100%,rgba(255,255,255,1)));
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
-  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(248,248,248,1) 50%,rgba(245,245,245,1) 51%,rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-  text-shadow:1px 1px 1px rgba(255,255,255, 1);
+  border: 1px solid #ddd;
+  background: rgb(255,255,255);
 }
 table.avp td {
   padding: 0 5px 0 5px;
@@ -128,8 +125,8 @@ button.facebook a:hover {
 
 #twitter-wrapper {
   margin-left: 8px;
-  width:388px; padding:15px 15px 0 15px;
-  background: rgb(255,255,255);
+  width:388px; padding:15px;
+  
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
@@ -137,6 +134,8 @@ button.facebook a:hover {
   background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  background: rgb(255,255,255);
+
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 
   -webkit-border-radius: 4px;
@@ -163,7 +162,7 @@ button.facebook a:hover {
     left: 36px;
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-bottom: 10px solid rgba(200,200,200,.5);
+    border-bottom: 10px solid #ccc;
     border-left: 10px solid transparent; 
     border-right: 10px solid transparent;   
   }
@@ -171,7 +170,6 @@ button.facebook a:hover {
 
 .map-section {
   margin: 20px 0 0 8px;
-  background: rgb(255,255,255);
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
@@ -179,6 +177,7 @@ button.facebook a:hover {
   background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  background: rgb(255,255,255);
   width:388px; padding: 15px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -208,7 +207,7 @@ button.facebook a:hover {
     left: 36px;
     margin: 0; padding: 0;
     width: 0; height: 0;
-    border-bottom: 10px solid rgba(200,200,200,.5);
+    border-bottom: 10px solid #ccc;
     border-left: 10px solid transparent; 
     border-right: 10px solid transparent;   
   }
@@ -218,7 +217,7 @@ button.facebook a:hover {
 
     .avatar>ul.list { 
       display:none;
-      position:absolute; right: 1px; top:0;
+      position:absolute; right: 1px; top:1px;
       width:60px; height: 335px;
       margin:0; padding:100px 0px 45px 0px; list-style:none;
       background: rgba(255,255,255,.5);
