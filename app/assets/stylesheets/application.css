@@ -23,8 +23,7 @@
 img,embed,object,video { max-width: 100%; }
 
 img.topfloat {
-  width: 897px;
-  position: absolute; top: 72px; left: 70px;  
+  position: absolute; top: 72px; left:73px; 
 }
 
 /* Other ----------------------------------------------------------*/

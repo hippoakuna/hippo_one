@@ -40,8 +40,8 @@ a:hover, a:active { color: #333; }
 -------------------------------------------------------------------*/
 
 .container > header {
-  height: 353px; /*358*/ 
-  padding: 1.2em 1.2em 0 1.2em;
+  height: 353px;
+  padding: 20px 0 0 0;
   border-bottom:1px solid #ddd;
   background: #fff; color: #fff;
   background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back2back2.png) top repeat;
@@ -96,7 +96,7 @@ button.newsletter {
 input[type=email] {
   background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg) top repeat;
   font: normal 12px 'Helvetica neue', 'lato', Helvetica;
-  height: 27px; width: 716px;
+  height: 28px; width: 716px;
   padding:5px 5px 5px 10px;
   border: 1px solid #ccc;
 }

@@ -5,7 +5,7 @@
 .slidesjs-pagination {
   margin: 0;
   list-style: none; text-align: center;
-  position: relative; left: -21px; bottom: 0px;
+  position: relative; left: -21px; bottom: 173px;
   white-space: nowrap;   
 }
 .slidesjs-pagination li { display: inline-block; }
@@ -18,8 +18,6 @@
   border-radius: 50%;
   cursor: pointer;
   color: rgba(0,0,0,.0);
-  position: relative; bottom: 178px; /*141
-  bottom: 198px; z-index: 999;*/
 }
 .slidesjs-pagination li a:hover { background: #777; }
 .slidesjs-pagination li a.active,
