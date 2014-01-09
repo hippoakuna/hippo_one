@@ -25,6 +25,16 @@ img,embed,object,video { max-width: 100%; }
 img.topfloat {
   position: absolute; top: 72px; left:73px; 
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome */
+    img.topfloat { left:73px;}
+
+    /* Safari only override */
+    ::i-block-chrome, img.topfloat { left:72px; }
+}
+@-moz-document url-prefix() {
+    img.topfloat { left:72px; }
+}
 
 /* Other ----------------------------------------------------------*/
 

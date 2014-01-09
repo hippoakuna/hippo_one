@@ -100,6 +100,16 @@ input[type=email] {
   padding:5px 5px 5px 10px;
   border: 1px solid #ccc;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome */
+    input[type=email] { height: 28px;}
+
+    /* Safari only override */
+    ::i-block-chrome, input[type=email] { height: 27px; }
+}
+@-moz-document url-prefix() {
+  input[type=email] { width: 689px; }
+}
 input[type=email]:hover,
 input[type=email]:focus { outline: none; }
 

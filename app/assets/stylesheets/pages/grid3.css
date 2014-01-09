@@ -43,7 +43,6 @@ img#content-background {
   background: #d0d0d0;
   height: 481px; width: 855px; 
 }
-
 #content .avatar table.avp {
   width: 100%;
   color: #666; text-shadow:1px 1px 1px rgba(255,255,255, 1);
@@ -56,6 +55,9 @@ img#content-background {
   border-bottom-right-radius: 5px;
   border: 1px solid #ddd;
   background: rgb(255,255,255);
+}
+@-moz-document url-prefix() {
+  #content .avatar table.avp { margin: -4px 0 0 0; }
 }
 table.avp td {
   padding: 0 5px 0 5px;
