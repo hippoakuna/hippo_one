@@ -1,5 +1,8 @@
 HippoOne::Application.routes.draw do
-  root "global_pages#alt"
+  root "global_pages#home"
+
+  #root "global_pages#alt"
+  #match '/home', to: 'global_pages#home', via: 'get'
 
   match '/hitrecord/hat-inky-remix', to: 'global_pages#hit1',  via: 'get'
   match '/netflix/indie-picks',      to: 'global_pages#net1',  via: 'get'

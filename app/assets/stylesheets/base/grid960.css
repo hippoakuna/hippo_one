@@ -102,8 +102,8 @@ body {
 	width:434px; /* was 545 */
 }
 
-.container_12 .grid_8 {
-	width:625px;
+.container_12 .grid_8 { /* was 625 */
+	width:465px;
 }
 
 .container_12 .grid_9 {
