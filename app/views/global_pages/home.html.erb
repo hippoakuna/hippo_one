@@ -8,38 +8,21 @@ body { background: #dfdfdf; }
 /*-----------------------------------------------------------------*/
 
 header#feature-area { 
-  background: #dfdfdf; 
-  height: 535px; 
+  background: url(/assets/back.png) no-repeat;
+  background-size: 100% 650px;
+  padding: 0;
+  height: 100%; overflow: hidden; /*600px*/
+  border: 0px none; padding:0;
 }
-div.featured { margin-top: 10px; background: #999; }
-div.featured img.featured { width: 470px; }
-div.featured img.feat-award { 
-  width: 80px; 
-  margin: 0 15px -22px -10px; 
-  opacity: .6;
+header#feature-area img.main-feature {
+  margin-bottom: -5px;
+  width: 100%;
 }
-div.featured section.feat {
-  text-align: center;
-  background: #fff; color: #444;
-  width: 425px; height: 0;
-  margin-top: -21px; padding: 60px 20px 190px 20px;
-  font: 300 16px 'lato';
-  border-radius: 1px;
+header#feature-area img.name {
+  position: absolute; left: 57.5%; top: 35%;
+  width: 15%; 
 }
-div.featured section.feat h2 { 
-  font: 300 22px 'lato'; 
-  margin-bottom: 5px; 
-}
-div.featured section.feat button {
-  background: #fff; border:1px solid #ddd; padding: 8px 15px;
-  width: 110px;
-}
-div.featured section.feat button:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0px 1px 1px 0px #ddd;
-  -moz-box-shadow:    0px 1px 1px 0px #ddd;
-  box-shadow:         0px 1px 1px 0px #ddd;
-}
+
 /*-----------------------------------------------------------------*/
 
 header#production-area {
@@ -97,224 +80,25 @@ header#production-area section.right-box span h2 {
 
 /*-----------------------------------------------------------------*/
 
-header#pre-curated-area { 
-  background: #dfdfdf; 
+header#pre-curated-area {
+  height: 270px; 
+  background: url(/assets/text-ks.png) repeat;
+  background-size: 50px 50px; 
   margin-bottom: -200px; 
+  border: 0px none;
 }
-div.pre-curated section.pre-cure {
-  background: #fff; color: #888;
-  width: 425px; height: 120px;
-  margin-top: 10px; padding: 20px 20px 0 20px;
-  font: 300 14px 'helvetica'; 
-  border-radius: 3px; 
-  border:1px solid #d6d6d6;
-  -webkit-box-shadow: 0px 1px 1px 0px #ccc;
-  -moz-box-shadow:    0px 1px 1px 0px #ccc;
-  box-shadow:         0px 1px 1px 0px #ccc;
-}
-div.pre-curated section.pre-cure h2 { 
-  margin: 8px 0 2px 0;
-  font: 300 22px 'lato'; color: #444;  
-}
-div.pre-curated section.pre-cure h2 small { 
-  font: 300 14px 'lato'; 
-  margin-top: 8px; color: #999;
-}
-div.pre-curated section.pre-cure img {
-  width: 35px; height: 35px;
-  float: left; margin: 20px 8px 0 0; 
-  border-radius: 3px; 
-}
-div.pre-curated section.pre-cure button {
-  background: #fff; border:1px solid #ddd; padding: 8px 15px;
-  width: 110px; font-weight: bold; margin:10px 5px 0 0;
-}
-div.pre-curated section.pre-cure button:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0px 1px 1px 0px #ddd;
-  -moz-box-shadow:    0px 1px 1px 0px #ddd;
-  box-shadow:         0px 1px 1px 0px #ddd;
+header#pre-curated-area img {
+  padding-top: 20px;
 }
 
-/*-----------------------------------------------------------------*/
-
-.form-5 p {
-    background: rgba(245,245,245,1);
-    width: 330px; 
-    position: relative;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.3), inset 0 2px 4px rgba(0,0,0,0.3);
-    border-bottom: 1px solid rgba(255,255,255,.3);
-}
-.form-5 input[type=text],
-.form-5 input[type=password],
-.form-5 input[type=email] {
-    width: 100%;
-    height: 50px;
-    padding: 0 10px;
-    border: none; 
-    background: white; /* Fallback */
-    background: rgba(255,255,255,0.2);
-    box-shadow: 
-        inset 0 0 10px rgba(255,255,255,0.5);
-    font-family: 'Lato';
-    text-indent: 10px; 
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    font-size: 14px;       
-}
-.form-5 input[name=top], .form-5 input[name=FNAME] {
-    border-bottom: 1px solid #fff; /* Fallback */
-    border-bottom: 1px solid rgba(255,255,255,0.7);
-    border-radius: 10px 10px 0 0;
-}
-.form-5 input[name=up], .form-5 input[name=EMAIL] {
-    border-top: 1px solid #CCC; /* Fallback */
-    border-top: 1px solid rgba(0,0,0,0.1);
-    border-radius: 0 0 10px 10px;
-}
-.form-5 input[type=text]:hover,
-.form-5 input[type=password]:hover,
-.form-5 input[type=email]:hover,
-.form-5 input[type=text]:focus,
-.form-5 input[type=password]:focus,
-.form-5 input[type=email]:focus {
-    background: #f7def7; /* Fallback */
-    background: rgba(255,255,255,0.4);
-    outline: none;
-}
-.form-5 input::-webkit-input-placeholder {
-    color: #666;
-    text-shadow: 0 -1px 1px rgba(255,255,255,0.4);
-    font-family: 'Lato'; font-weight: 300;
-}
-.form-5 input:-moz-placeholder {
-    color: #666;
-    text-shadow: 0 -1px 1px rgba(255,255,255,0.4);
-    font-family: 'Lato'; font-weight: 300;
-}
-.form-5 input:-ms-input-placeholder {
-    color: #666;
-    text-shadow: 0 -1px 1px rgba(255,255,255,0.4);
-    font-family: 'Lato'; font-weight: 300;
-}
-.form-5 *,
-.form-5 *:after,
-.form-5 *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-form.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.form-5 button {
-  background: #fff; border:1px solid #ddd; padding: 8px 15px;
-  margin-top: 10px; position: relative; right: -345px; top: -110px;
-  height: 100px; color: #999;
-  -webkit-box-shadow: inset 0px 1px 1px 0px #ddd;
-  -moz-box-shadow:    inset 0px 1px 1px 0px #ddd;
-  box-shadow:         inset 0px 1px 1px 0px #ddd;
-}
-.form-5 button:hover {
-  cursor: pointer; color: #444;
-  -webkit-box-shadow: 0px 1px 1px 0px #ddd;
-  -moz-box-shadow:    0px 1px 1px 0px #ddd;
-  box-shadow:         0px 1px 1px 0px #ddd;
-}
-
-/*-----------------------------------------------------------------*/
-
-header#curated-area { 
-  background: #dfdfdf;
-  margin-top: 10px;
-}
-header#curated-area h2:hover { color:#0084b4; }
-div.curated section.cure {
-  background: #fff; color: #888;
-  width: 425px; height: 80px;
-  margin-top: 0; padding: 20px 20px 0 20px;
-  font: 300 14px 'helvetica'; 
-  border-radius: 3px; 
-  border:1px solid #d6d6d6;
-  -webkit-box-shadow: 0px 1px 1px 0px #ccc;
-  -moz-box-shadow:    0px 1px 1px 0px #ccc;
-  box-shadow:         0px 1px 1px 0px #ccc;
-}
-div.curated section.cure span { 
-  vertical-align: top; 
-  float: left; 
-  margin-top: -3px;
-}
-div.curated section.cure h2 { 
-  font: 400 14px 'helvetica'; 
-  margin-bottom: 2px; color: #444;
-}
-div.curated section.cure img {
-  width: 50px; height: 50px;
-  float: left; margin: 0 15px 0 0; 
-  border-radius: 100%; /*border-radius: 3px;*/
-}
-div.curated img.featured { width: 465px; margin-left:1px; }
-
-/*-----------------------------------------------------------------*/
-
-.cols {
-  -moz-column-count:2;
-  -moz-column-gap: 28px;
-  -webkit-column-count:2;
-  -webkit-column-gap: 28px;
-  column-count: 2;
-  column-gap: 28px;
-}
-.box {
-  display: block;
-  margin-bottom: 25px;
-  -webkit-transition-property: left,right,top;
-  -moz-transition-property: left,right,top;
-  -ms-transition-property: left,right,top;
-  -o-transition-property: left,right,top;
-  transition-property: left,right,top;
-  -webkit-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -ms-transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  transition-duration: 0.6s;
-}
 </style>
 
 <!-- Feature Area 
 ..................................................................-->
 
 <header id="feature-area">
-<div class="container_12">
-
-  <div class="featured grid_8" style="margin-right:30px;">
-    <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/mlb.jpg", class: "featured"), melikebees_path %>
-    <section class="feat">
-      <h2>Me Like Bees</h2>
-      <small>Indie / Alternative / Rock</small>
-      <br><br><img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/FEAT.png" class="feat-award"/>
-      <a href="melikebees"><button>Feature Page</button></a>
-    </section>
-  </div>
-
-  <div class="featured grid_8">
-    <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/dot2.jpg", class: "featured"), dot_path %>
-    <section class="feat">
-      <h2>Dot - Short Film</h2>
-      <small>Dark Comedy - By <a href="http://vimeo.com/garrettkennell" target="_blank">Garrett Kennell</a></small>
-      <br><br><img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/FEAT.png" class="feat-award"/>
-      <a href="dot"><button>Feature Page</button></a>
-    </section>
-  </div>
-
-</div><div class='clear'>&nbsp;</div>
+  <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/wide.jpg", class: "main-feature"), melikebees_path %>
+  <%= link_to image_tag("http://hippoartists.com.s3.amazonaws.com/images/main/banners/mlb-circle.png", class: "name"), melikebees_path %>
 </header>
 
 
@@ -332,12 +116,11 @@ div.curated img.featured { width: 465px; margin-left:1px; }
     </span>
     <section class="right-box">
       <span>
-        <h2>Dot Teaser</h2>
-        <small><a href="http://vimeo.com/garrettkennell" target="_blank">Garrett Kennell</a></small>
+        <h2>Dot</h2>
+        <small><a href="http://vimeo.com/garrettkennell" target="_blank">Watch Teaser</a></small>
         <br><br>
-        <a href='#demo_inline_element' class='lightview'
-          data-lightview-options="skin: 'dark', controls: { type: 'relative', slider: false, close: 'false' }">
-          <button>Open Video</button>
+        <a href="dot">
+          <button>Feature Page</button>
         </a>
       </span>
       <a href='#demo_inline_element' class='lightview'
@@ -357,105 +140,24 @@ div.curated img.featured { width: 465px; margin-left:1px; }
 </div>
 
 <!-- Pre-Curated Area 
-..................................................................-->
+..................................................................
 
 <header id="pre-curated-area">
 <div class="container_12">
-  <div class="pre-curated grid_8" style="margin-right:30px">    
-    <section class="pre-cure">
-      <span>
-        <h2>We curate from these guys: <small style="float:right;">5 posts</small></h2>
-      </span>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/netflix-icon.jpg"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/kicksq.png"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/circle2.png"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/pand.jpg"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/spot.jpeg"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/vimeo-icon.png"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/youtube.jpg" style="border:1px solid #ddd"/>
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/sq.png" style="margin-right:0px;"/>
-    </section>
-  </div>
-  <div class="pre-curated grid_8">    
-    <section class="pre-cure">
-      <span>
-        <h2>Follow us here: <small style="float:right;"><a href="mailto:hippoartists.com@gmail.com?subject=&amp;body=" title="Contact by Email"><i class="fa fa-envelope-o" style="margin-right:3px"></i> Contact</a></small></h2>
-      </span>
-      <br><a href="https://www.facebook.com/hippoartists" target="_blank">
-      <button><i class="fa fa-facebook"></i>acebook</button></a> 
-      <a href="https://twitter.com/hippoartists" target="_blank"><button><i class="fa fa-twitter"></i> Twitter</button></a>
-    </section>
-  </div>
+
+<%= image_tag "kylesteed.png" %>
+
 </div><div class='clear'>&nbsp;</div>
 </header>
-
-<!-- Curated Area 
-..................................................................-->
-
-<header id="curated-area">
-<div class="container_12 cols">
-  
-  <div class="curated box">    
-    <section class="cure">
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/netflix-icon.jpg"/>
-      <span>
-        <a href="netflix/indie-picks"><h2>Indie Picks</h2></a>
-        <small>Netflix Playlist</small>
-      </span>
-    </section>
-    <a href="netflix/indie-picks"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/net/db.jpg", class: "featured" %></a>
-  </div>
-  <div class="curated box">
-    <section class="cure">
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/kicksq.png"/>
-      <span>
-        <a href="kickstarter/barstow"><h2>BARSTOW - Feature Film</h2></a>
-        <small>Kickstarter Feature</small>
-      </span>
-    </section>
-    <a href="kickstarter/barstow"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/kick/barstow.jpg", class: "featured" %></a>
-  </div>
-  <div class="curated box" style="margin-bottom:70px;">    
-    <section class="cure">
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/pand2.jpg"/>
-      <span>
-        <a href="pandora/givers"><h2>Givers Playlist</h2></a>
-        <small>Pandora Playlist</small>
-      </span>
-    </section>
-    <a href="pandora/givers"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/playlists/pan/givers.jpg", class: "featured" %></a>
-  </div>
-  <div class="curated box">
-    <section class="cure">
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/circle2.png"/>
-      <span>
-        <a href="hitrecord/hat-inky-remix"><h2>Hat (Inky Remix)</h2></a>
-        <small>HitRECord Feature</small>
-      </span>
-    </section>
-    <a href="hitrecord/hat-inky-remix"><%= image_tag "http://d3q28pkxsyrk9d.cloudfront.net/record_attachments/1245303/wide/pantoufle-1245303.jpg?1364186645", class: "featured" %></a>
-  </div>
-  <div class="curated box">
-    <section class="cure">
-      <img src="http://hippoartists.com.s3.amazonaws.com/images/main/etc/sq.png"/>
-      <span>
-        <a href="https://squareup.com/market/color-jar/fine-art-print-x-tallulah" target="_blank"><h2>Fine Art Print 11" x 14" "Tallulah"</h2></a>
-        <small>Square Feature</small>
-      </span>
-    </section>
-    <a href="https://squareup.com/market/color-jar/fine-art-print-x-tallulah" target="_blank"><%= image_tag "https://d2isyty7gbnm74.cloudfront.net/Bt622Dr5274qb5wPe_cA_jzL9M4=/530x530/square-production.s3.amazonaws.com/files/72de4c89d84515bda091bb8c5748c463b60f0444/original.jpeg", class: "featured" %></a>
-  </div>  
-</div><div class='clear'>&nbsp;</div>
-</header>
-
+-->
 <!-- JavaScript
 ..................................................................-->
 
-<!-- lap-tiles -->
+<!-- lap-tiles 
 <script>
   Modernizr.load({
     test: Modernizr.csscolumns,
     yep : '',
     nope: ['http://masonry.desandro.com/jquery.masonry.min.js', '/assets/tiles/main.js']
   });
-</script>
+</script>-->
