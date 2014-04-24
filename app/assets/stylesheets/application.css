@@ -27,7 +27,7 @@ img.topfloat {
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
     /* Safari and Chrome */
-    img.topfloat { left:72px; top: 73px;}
+    img.topfloat { left:73px; top: 73px;}
 
     /* Safari only override */
     ::i-block-chrome, img.topfloat { left:72px; }

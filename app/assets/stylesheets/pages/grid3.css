@@ -90,7 +90,7 @@ a.flat-link-not:hover {color:#000; text-decoration: none;}
 .about {
   color: #000;
   margin: 0 9px 25px 0px;
-  font: 13px 'Helvetica Neue';
+  font: 14px 'HelveticaNeue-Light', 'Helvetica Neue';
   line-height: 1.7em;
 }
 .about p.big-font {
