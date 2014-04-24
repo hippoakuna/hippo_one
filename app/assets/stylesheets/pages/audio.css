@@ -63,9 +63,17 @@ span.audio-actions a:hover {
 -------------------------------------------------------------------------------------*/
 
 .view h3 {
-  background: #eee;
+  background: #eee;background: #f6f8f9;
+  background: -moz-linear-gradient(-45deg,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9));
+  background: -webkit-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  background: -o-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  background: -ms-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  background: linear-gradient(135deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 );
+
   font: 18px normal 'HelveticaNeue-Light', 'helvetica neue';
-  color: #aaa; padding:20px;
+  color: #666; padding:20px;
 }
 .view {
    margin-top:1px;  margin-left: -2px;
@@ -133,6 +141,7 @@ table.playlist ol a li {
   padding: 7px; 
   font: 300 15px 'HelveticaNeue-Light', 'helvetica neue';
   text-align: left;
+  border-bottom: 1px solid #eee;
 }
 table.playlist ol a li:hover {
   background: rgba(242,242,242,.5);
