@@ -2,9 +2,8 @@
 <%= stylesheet_link_tag 'pages/grid3' %>
 
   <!-- Twitter Widget -->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-  </script>
-
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  
   <!-- Share -->
   <script>
     (function($){
@@ -63,24 +62,9 @@
 
     <table class="avp">
       <td>
-        <i class="icon-map-marker"></i> Pittsburgh, PA
+        <button class="share" type="submit"><i class="icon-share"></i></button>
       </td>
-      <td> 
-        <strong style="margin-right:3px">Genres:</strong> Dark Comedy
-      </td>
-      <td> 
-        <strong style="margin-right:3px">Writer/Director:</strong> Garrett Kennell, David Light
-      </td>
-      <td> 
-        <strong style="margin-right:3px">Producer:</strong> Meg Kuntz
-      </td>
-      <td>
-        <a style="font-weight:bold" class="flat-link" href="https://www.facebook.com/dotshortfilm" target="_blank"><i class="fa fa-facebook"></i>acebook </a>
-      </td>
-      <td>
-        <button class="share" type="submit" style="float:right;margin-right:2px;"><i class="icon-share"></i></button>
-      </td>
-    </table>  
+    </table>   
     <ul class="list">
         <a href="#" onclick="
             window.open(
@@ -115,24 +99,37 @@
     </ul>
   </div>
 
-
-  <div class="grid_6" style="margin-top:-14px;">
-    <h4>About</h4> 
-    <div class="about"> 
-      <p style="font: 24px 'lane', 'lato'; font-weight:300;">
-        Coming this Spring.
-      </p>
-      <p>
-        Dot, a 16-year-old girl suffering from OCD, who compulsively kills anyone she sees making a mess, struggles with her inability to keep anyone close as a charming, young rabbit breeder pushes his way into her life.
-      </p>
-    </div>
+  <div class="about-section about grid_6" style="margin-right:20px"> 
+    <p class="big-font">Coming this Spring.</p>
+    <div class="thick-line">.</div>
+    <p style="margin-top:30px;">
+      Dot, a 16-year-old girl suffering from OCD, who compulsively kills anyone she sees making a mess, struggles with her inability to keep anyone close as a charming, young rabbit breeder pushes his way into her life.
+    </p>
   </div><div class='clear'>&nbsp;</div>
 
+<div class="grid_6">
+
+  <div class="map-section"> 
+      <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/icons/main/1con-basic.png", class: "icon-about" %>
+      <table class="avp" style="color:#666;margin-top:3px;">
+        <td> 
+          <strong style="margin-right:3px;">Genre:</strong> Dark Comedy
+        </td>
+        <td>
+          <a style="font-weight:bold;" class="flat-link" href="https://www.facebook.com/dotshortfilm" target="_blank"><i class="fa fa-facebook"></i>acebook </a>
+        </td>
+        <td>
+          <a class="flat-link-not" href="https://www.indiegogo.com/projects/dot-short-film#home" target="_blank"><i class="fa fa-laptop"></i> Website</a>
+        </td>
+      </table>  
+
+      
+  </div>
+
   <div class="comment-section grid_6">
-    <h4 style="margin:44px 0 28px 9px;">Latest Tweet</h4>  
     <div id="twitter-wrapper">
       <a class="twitter-timeline" 
-       href="https://twitter.com/melikebees" 
+       href="https://twitter.com/garrettkennell" 
        data-theme="custom"
        data-tweet-limit="1"
        data-chrome="nofooter noheader noborders noscrollbar transparent"
@@ -141,12 +138,16 @@
        Tweets by @GarrettKennell
       </a>
     </div>
-    <b class="border-notch"></b>  
-    <b class="notch"></b>
   </div>
 
-</div>
+  </div>
+
+</div><div class='clear'>&nbsp;</div>
 
 </section>
 
 </div>
+
+
+
+

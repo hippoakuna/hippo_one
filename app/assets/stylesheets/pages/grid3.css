@@ -44,24 +44,23 @@ img#content-background {
   height: 481px; width: 855px; 
 }
 #content .avatar table.avp {
-  width: 100%;
+  width: 40px; 
   color: #666; text-shadow:1px 1px 1px rgba(255,255,255, 1);
-  margin: -3px 0 0 0; padding: 0;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: 1px solid #ddd;
-  background: rgb(255,255,255);
+  position: absolute; top: 430px; right: 3px;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  
+  background: rgba(0,0,0,.5);
+  border: 3px solid rgba(255,255,255,.3);
 }
 @-moz-document url-prefix() {
   #content .avatar table.avp { margin: -4px 0 0 0; }
 }
 table.avp td {
   padding: 0 5px 0 5px;
-  height: 40px;
+  height: 30px;
   border-right:1px solid rgba(230,230,230,.8); 
   text-align: center;
   font: normal 12px 'Helvetica Neue', 'Lato', Helvetica;
@@ -77,8 +76,9 @@ table.avp td:last-child {
   -moz-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-#content .avatar a.flat-link {color:#666;}
-#content .avatar a.flat-link:hover {color:#0084b4; text-decoration: none;}
+a.flat-link, a.flat-link-not {color:#666;}
+a.flat-link:hover {color:#0084b4; text-decoration: none;}
+a.flat-link-not:hover {color:#000; text-decoration: none;}
 
 /* Content (About)
 -------------------------------------------------------------------------------------*/
@@ -88,19 +88,40 @@ table.avp td:last-child {
   margin-top: 10px;
 }
 .about {
-  color: rgba(1,1,1,.8);
+  color: #000;
   margin: 0 9px 25px 0px;
-  font: 18px 'Lato'; font-weight: 300;
+  font: 13px 'lane','Helvetica Neue';
   line-height: 1.7em;
+}
+.about p.big-font {
+   font: 24px 'lane', 'lato'; font-weight:300; 
+   margin: 15px 0 0 0;
+}
+div.thick-line {
+  border-bottom: 10px solid #eee; /*#8db538 /*54a3a0*/
+  width: 431px; color: rgba(1,1,1,0);
+  margin: 8px -15px 0 -15px;
+
+  height: 10px;
+  background: #f6f8f9;
+  background: -moz-linear-gradient(-45deg,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9));
+  background: -webkit-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  background: -o-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  background: -ms-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  background: linear-gradient(135deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 );
+
+  border-bottom: 0 none;
+  margin: 27px -15px 0 -15px;
 }
 .comments {
   margin-left: 9px; 
 }
+.grid_6 { margin-top: 20px; }
 .grid_6 h4 {
-  font: bold 12px 'Helvetica Neue'; 
-  text-transform: uppercase;
-  color: rgba(0,0,0,.5);
-  margin-top: 58px;
+  font: bold 14px 'Helvetica Neue'; 
+  color: rgba(0,0,0,.8);
 }
 
 /* Buttons
@@ -111,9 +132,10 @@ button.share {
   background: none;
   border: 0 none;
   padding: 0; margin: 0;
-  color: #666;
+  color: #fff;
   font: 12px 'Helvetica Neue', 'Lato', Helvetica;
   cursor: pointer;
+  outline: none;
 }
 button.facebook a {
   color: #0084b4;
@@ -126,8 +148,7 @@ button.facebook a:hover {
 -------------------------------------------------------------------------------------*/
 
 #twitter-wrapper {
-  margin-left: 8px;
-  width:388px; padding:15px;
+  padding: 15px;
   
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
@@ -143,35 +164,13 @@ button.facebook a:hover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid rgba(150,150,150,.25);
+  border: 1px solid rgba(150,150,150,.30);
   -webkit-box-shadow: 0px 1px 1px 0px #eee;
   -moz-box-shadow:    0px 1px 1px 0px #eee;
   box-shadow:         0px 1px 1px 0px #eee;  
 }
-  .comment-section .notch {
-    position: absolute;
-    top: 4.9em; 
-    left: 36px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-bottom: 10px solid rgb(255,255,255);
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent;   
-  }
-  .comment-section .border-notch {
-    position: absolute;
-    top: 4.83em; 
-    left: 36px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-bottom: 10px solid #ccc;
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent;   
-  }
 
-
-.map-section {
-  margin: 20px 0 0 8px;
+.about-section {
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
@@ -180,47 +179,50 @@ button.facebook a:hover {
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
   background: rgb(255,255,255);
-  width:388px; padding: 15px;
+  padding: 15px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid rgba(150,150,150,.25);
+  border: 1px solid rgba(150,150,150,.30);
   -webkit-box-shadow: 0px 1px 1px 0px #eee;
   -moz-box-shadow:    0px 1px 1px 0px #eee;
   box-shadow:         0px 1px 1px 0px #eee;  
 }
+
+.map-section {
+  padding: 15px;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  background: rgb(255,255,255);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(150,150,150,.35);
+  -webkit-box-shadow: 0px 1px 1px 0px #eee;
+  -moz-box-shadow:    0px 1px 1px 0px #eee;
+  box-shadow:         0px 1px 1px 0px #eee;  
+}
+.map-section img.icon-about {
+  width: 40px; float: left; margin-bottom: 15px; 
+}
 .map-section iframe {
-  width: 100%; height: 220px;
+  border-top: 1px solid rgba(150,150,150,.30);
 }
 
-  .map-section .notch {
-    position: absolute;
-    top: 3.9em; 
-    left: 36px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-bottom: 10px solid rgb(255,255,255); /* 254 */
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent;   
-  }
-  .map-section .border-notch {
-    position: absolute;
-    top: 3.83em; 
-    left: 36px;
-    margin: 0; padding: 0;
-    width: 0; height: 0;
-    border-bottom: 10px solid #ccc;
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent;   
-  }
+
 
 /* Social List
 -------------------------------------------------------------------------------------*/
 
     .avatar>ul.list { 
       display:none;
-      position:absolute; right: 1px; top:1px;
-      width:60px; height: 335px;
+      position:absolute; right: 0; top:0;
+      width:60px; height: 336px;
       margin:0; padding:100px 0px 45px 0px; list-style:none;
       background: rgba(255,255,255,.5);
       color:#333;

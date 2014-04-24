@@ -168,6 +168,20 @@ $.fn.wookmark = function(options) {
 };
 
 </script>
+<style>
+table.playlist { width: 97%; }
+table.playlist ol a li {
+  border-bottom: 1px solid #eee;
+  padding: 7px; 
+  font: 300 15px 'lato', 'helvetica neue';
+  text-align: left;
+}
+table.playlist ol a li:hover {
+  background: rgba(252,252,252,.8);
+  cursor: pointer;
+}
+table.playlist ol a li:last-child { border-bottom: 0;}
+</style>
 
 <!-- 
 ....................................................................
@@ -190,101 +204,72 @@ $.fn.wookmark = function(options) {
 
 
   <div class="view">  
-    <a href='#demo_inline_element_three' class='lightview'
-    data-lightview-options="skin: 'light', controls: { type: 'relative', slider: false, close: 'false' }">
+    <a href='http://open.spotify.com/album/1uSprrgHkSgS995DwhBLYH' target="_blank">
       <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/cds/melikebees/mlb.jpg", class: "coverart" %>
     </a>
+    <span style="margin-left:25px; font:12px normal 'helvetica neue'; ">2013 <span style="margin-left:285px;">Debut CD</span></span>
+    <h3>The Ides</h3>
     <table class="playlist">
       <th valign="top" id="tracks">   
         <ol class="graphic">
-          <li><a href="http://open.spotify.com/track/7fsflM1FA6D61nuaABrusZ" target="_blank">Brand New Fall</a></li><span class="audio-actions">
-          <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/2rcTRXEqZSKfiye6fQKLyS" target="_blank">The Fifteenth Day</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/1AVADeYGjUspRk4G3Gfw2E" target="_blank">The Ides</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="https://s3.amazonaws.com/hippoartists.com/audios/The+Ides+-+Me+Like+Bees/04+Naked+Trees.m4a" onContextMenu="return false;">Naked Trees</a></li><span class="audio-actions"><i class="icon-music"></i></span>
-
-          <li><a href="http://open.spotify.com/track/2yssXyVQ7spz3UYDI0gXF0" target="_blank">Kids In The Kitchen</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/75Ja48fwMCd5ALlkOg8iha" target="_blank">Rolodex</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/7CqHGoHU7CfJ8scxEsMHv1" target="_blank">Ra Ra Etc.</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/2rtbHQE3TV5dbrKYBQ5wuN" target="_blank">Comet And The Snail</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/1xnZQ1yJl194RI0rPDlbpI" target="_blank">Joseph Jones</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/4LHmmwPlWjTF5PynBa2E6A" target="_blank"> Well Enough Alone</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/3S4iIXsPesFTH9jATIhYyx" target="_blank">Solstice Grind</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/33hskhkJ8JNGRWScFQl1Xf" target="_blank">Lazarus</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/3D0iDwE2GxALedLj213F51" target="_blank">Fox Hole Down</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/3GVWNJ9LCAa2PASt7vpTRz" target="_blank">Pneumonia</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>        
+          <a href="http://open.spotify.com/track/7fsflM1FA6D61nuaABrusZ" target="_blank"><li>Brand New Fall
+          <span style="float:right;">3:41</span></li></a>
+          <a href="http://open.spotify.com/track/2rcTRXEqZSKfiye6fQKLyS" target="_blank"><li>The Fifteenth Day
+          <span style="float:right;">3:28</span></li></a>
+          <a href="http://open.spotify.com/track/1AVADeYGjUspRk4G3Gfw2E" target="_blank"><li>The Ides
+          <span style="float:right;">3:21</span></li></a>
+          <a href="http://open.spotify.com/track/7vsZgwQJxI8kVCN15OyWQl" target="_blank"><li>Naked Trees
+          <span style="float:right;">4:32</span></li></a>
+          <a href="http://open.spotify.com/track/2yssXyVQ7spz3UYDI0gXF0" target="_blank"><li> Kids in the Kitchen
+          <span style="float:right;">4:13</span></li></a>
+          <a href="http://open.spotify.com/track/75Ja48fwMCd5ALlkOg8iha" target="_blank"><li>Rolodex
+          <span style="float:right;">3:27</span></li></a>
+          <a href="http://open.spotify.com/track/7CqHGoHU7CfJ8scxEsMHv1" target="_blank"><li>Ra Ra Etc.
+          <span style="float:right;">3:25</span></li></a>
+          <a href="http://open.spotify.com/track/2rtbHQE3TV5dbrKYBQ5wuN" target="_blank"><li>Comet and the Snail
+          <span style="float:right;">2:35</span></li></a>
+          <a href="http://open.spotify.com/track/1xnZQ1yJl194RI0rPDlbpI" target="_blank"><li>Joseph Jones
+          <span style="float:right;">3:11</span></li></a>
+          <a href="http://open.spotify.com/track/4LHmmwPlWjTF5PynBa2E6A" target="_blank"><li>Well Enough Alone
+          <span style="float:right;">4:09</span></li></a>
+          <a href="http://open.spotify.com/track/3S4iIXsPesFTH9jATIhYyx" target="_blank"><li>Solstice Grind
+          <span style="float:right;">3:27</span></li></a>
+          <a href="http://open.spotify.com/track/33hskhkJ8JNGRWScFQl1Xf" target="_blank"><li>Lazarus
+          <span style="float:right;">0:59</span></li></a>
+          <a href="http://open.spotify.com/track/3D0iDwE2GxALedLj213F51" target="_blank"><li>Fox Hole Down
+          <span style="float:right;">3:02</span></li></a>
+          <a href="http://open.spotify.com/track/3GVWNJ9LCAa2PASt7vpTRz" target="_blank"><li>Pneumonia
+          <span style="float:right;">8:32</span></li></a>
         </ol>  
       </th>
     </table>
   </div>
 
   <div class="view"> 
-    <a href='#demo_inline_element_three_one' class='lightview'
-    data-lightview-options="skin: 'light', controls: { type: 'relative', slider: false, close: 'false' }">
+    <a href='http://open.spotify.com/album/5GH1yNj00TEEobQ3opNsze' target="_blank">
       <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/cds/melikebees/mlb3.jpeg", class: "coverart" %>    
     </a>
+    <span style="margin-left:25px; font:12px normal 'helvetica neue'; ">2011 <span style="margin-left:320px;">EP</span></span>
+    <h3>Me Like Bees</h3>
     <table class="playlist">
       <th valign="top" id="tracks">   
         <ol class="graphic">
-          <li><a href="http://open.spotify.com/track/3b9zanmBs1ZDurNn3Utskk" target="_blank">Iconica</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/4CWw6RXoWxlnACAKzb6UEP" target="_blank">Good Machine</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/5AEduhYuz91d2oDbSg1y8N" target="_blank">Devil's Song</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>
-
-          <li><a href="http://open.spotify.com/track/0TSI1ehp08svU43q2ve32W" target="_blank">Doubt</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>   
-
-          <li><a href="http://open.spotify.com/track/7h4Tu7iK4E9qKp8629bDxb" target="_blank">Wind In The Willows</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span> 
-
-          <li><a href="http://open.spotify.com/track/2wAcGOD2ETJLpkXdaoNVL4" target="_blank">There's A Man</a></li><span class="audio-actions"><%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/etc/spotify.png", size: "16x16" %></span>  
+          <a href="http://open.spotify.com/track/3b9zanmBs1ZDurNn3Utskk" target="_blank"><li>Iconica
+          <span style="float:right;">3:41</span></li></a>
+          <a href="http://open.spotify.com/track/4CWw6RXoWxlnACAKzb6UEP" target="_blank"><li>Good Machine
+          <span style="float:right;">3:47</span></li></a>
+          <a href="http://open.spotify.com/track/5AEduhYuz91d2oDbSg1y8N" target="_blank"><li>Devil's Song
+          <span style="float:right;">4:33</span></li></a>
+          <a href="http://open.spotify.com/track/0TSI1ehp08svU43q2ve32W" target="_blank"><li>Doubt
+          <span style="float:right;">5:19</span></li></a>
+          <a href="http://open.spotify.com/track/7h4Tu7iK4E9qKp8629bDxb" target="_blank"><li> Wind In The Willows
+          <span style="float:right;">5:44</span></li></a>
+          <a href="http://open.spotify.com/track/2wAcGOD2ETJLpkXdaoNVL4" target="_blank"><li>There's A Man
+          <span style="float:right;">2:59</span></li></a>
         </ol>  
       </th>
     </table>
   </div>
-        <!-- pop up menu -->
-          <div id='demo_inline_element_three' style='display:none'>
-            <div class='audio-container'>
-              <div class="submenu">
-                <ul class="root">
-                  <li><a>
-                    <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/cds/melikebees/mlb.jpg", size: "32x32", style: "float:left;margin-right:15px;" %>
-                    <strong>The Ides</strong> <br>July 9, 2013</a>
-                  </li>
-                  <li><a href="https://play.spotify.com/artist/6b0G9aPXmaLLDWJHhCrv1Q" target="_blank"><i class="icon-play-sign"></i> Stream on Spotify</a></li>
-                  <li><a href="http://www.amazon.com/The-Ides/dp/B00DGHYGO0/ref=pd_sim_sbs_dmusic_a_1" target="_blank"><i class="icon-shopping-cart"></i> Buy on Amazon</a></li>
-                  <li><a href="http://www.amazon.com/The-Ides/dp/B00DGHYGO0/ref=sr_shvl_album_1?ie=UTF8&qid=1377572927&sr=301-1" target="_blank"><i class="icon-apple" style="margin-left:2px"></i> Buy on iTunes</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> 
-          <div id='demo_inline_element_three_one' style='display:none'>
-            <div class='audio-container'>
-              <div class="submenu">
-                <ul class="root">
-                  <li><a>
-                    <%= image_tag "http://hippoartists.com.s3.amazonaws.com/images/main/cds/melikebees/mlb3.jpeg", size: "32x32", style: "float:left;margin-right:15px;" %>
-                    <strong>EP</strong> <br>June 8, 2011</a>
-                  </li>
-                  <li><a href="https://play.spotify.com/album/5GH1yNj00TEEobQ3opNsze" target="_blank"><i class="icon-play-sign"></i> Stream on Spotify</a></li>
-                  <li><a href="http://www.amazon.com/Me-Like-Bees-EP/dp/B0058U2DPM" target="_blank"><i class="icon-shopping-cart"></i> Buy on Amazon</a></li>
-                  <li><a href="https://itunes.apple.com/us/album/me-like-bees-ep/id445558592" target="_blank"><i class="icon-apple" style="margin-left:2px"></i> Buy on iTunes</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> 
-        <!-- end menu --> 
 
 </div>
 </section>

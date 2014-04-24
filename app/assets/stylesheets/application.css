@@ -27,7 +27,7 @@ img.topfloat {
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
     /* Safari and Chrome */
-    img.topfloat { left:73px;}
+    img.topfloat { left:72px; top: 73px;}
 
     /* Safari only override */
     ::i-block-chrome, img.topfloat { left:72px; }
@@ -53,6 +53,7 @@ div.clear {
 
 #left-sidebar {
   font-family: 'Helvetica Neue', Helvetica;
+  /*background: #fff; border: 1px solid #ddd;*/
   background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/Linen-iPhone-2.png) top repeat;
   margin: 0; padding: 0; margin-top: 0em;
   position: fixed; 
@@ -67,13 +68,14 @@ div.clear {
   width: 5.86em; height: 6.3em; 
   margin-left: -40px; 
   list-style: none; 
+  border-bottom: 1px solid #eee;
   border-bottom: 1px solid #333;
   padding-bottom: .25em;
 }
 #left-sidebar ul.lg-icons:first-child { margin-top: 0; }
 #left-sidebar ul.lg-icons li img {
   opacity: .5;
-  width: 35px; height: 35px;
+  width: 25px; margin: 6px 0 6px 0;
   padding: .9em 6px 0 6px;
 }
 #left-sidebar ul.lg-icons li:hover img { opacity: .8; }
@@ -81,26 +83,24 @@ div.clear {
   background: rgba(1,1,1,.2); 
   color: rgba(255,255,255,.8); 
   text-decoration: none;  
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 /* Pods -----------------------------------------------------------*/
 
 #left-sidebar ul.lg-icons li:first-child {
-  -webkit-border-top-left-radius: 5px; 
-  -moz-border-top-left-radius: 5px; 
-  border-top-left-radius: 5px; 
-}
-#left-sidebar ul.lg-icons li {
-  -webkit-border-top-left-radius: 0;
-  -moz-border-top-left-radius: 0;
-  border-top-left-radius: 0;
+  -webkit-border-top-left-radius: 3px; 
+  -moz-border-top-left-radius: 3px; 
+  border-top-left-radius: 3px; 
 }
 
 /* Artist Pages
 -------------------------------------------------------------------------------------*/
 
 h1#artist-title {
-  z-index: 2; width:100%; padding: 22px 0px 22px 0; 
+  z-index: 2; width:100%; padding: 22px 0px 25px 0; 
   position: fixed; top: 25px; letter-spacing: 0px;
   font: 300 23px 'Lato'; 
   background: url(http://hippoartists.com.s3.amazonaws.com/images/main/main/back.jpg);

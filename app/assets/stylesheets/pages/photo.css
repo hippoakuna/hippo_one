@@ -91,12 +91,10 @@ div.clear {
 
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 
-
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-
-  border: 1px solid rgba(150,150,150,.25);
+  border: 1px solid rgba(150,150,150,.30);
   -webkit-box-shadow: 0px 1px 1px 0px #eee;
   -moz-box-shadow:    0px 1px 1px 0px #eee;
   box-shadow:         0px 1px 1px 0px #eee;  
